@@ -23,6 +23,86 @@ h6 {
 .footer-heading {
   color: #666666; }
 
+.section-intro-text {
+  color: #AAA;
+  font-size: 15px;
+  margin-left: 20%;
+  margin-right: 20%; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #666666; }
+
+.copy-text {
+  color: #929292; }
+
+.footer-heading {
+  color: #666666; }
+
+body {
+  margin: 0; }
+
+.container {
+  margin: auto; }
+
+section:before {
+  content: '';
+  display: block;
+  height: 40px; }
+
+section h2 {
+  margin: 0;
+  padding-top: 2em;
+  padding-bottom: 2em; }
+
+.section-intro-text {
+  font-size: 15px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  .section-intro-text + .overview .overview-item:first-child:before {
+    display: none; }
+
+section > .graph {
+  padding: 4em 0; }
+
+.use-case-image {
+  margin-top: 7.5em;
+  margin-bottom: 1.5em; }
+
+@media (max-width: 679px) {
+  section {
+    padding-top: 34px;
+    padding-bottom: 34px; }
+    section:before {
+      margin-left: -34px;
+      width: calc(100% + 68px); }
+  .container {
+    padding-left: 34px;
+    padding-right: 34px; } }
+
+@media (min-width: 680px) {
+  .container {
+    max-width: 580px; }
+  .copy-text ol,
+  .copy-text ul,
+  .copy-text p {
+    max-width: 70%; }
+    .copy-text ol > img,
+    .copy-text ul > img,
+    .copy-text p > img {
+      margin-left: 20%; } }
+
+.tag {
+  display: inline-block; }
+
 .tags .tag, .tags .experience-time {
   font-size: 14px;
   color: #999 !important;
@@ -30,9 +110,6 @@ h6 {
 
 .tags li {
   position: relative; }
-
-.tags .experience-time.overflows {
-  position: absolute; }
 
 .tags .tag {
   background-color: #e8e8e8 !important;
@@ -47,6 +124,17 @@ h6 {
     border-bottom-right-radius: 0; }
   .tags .technologies-stats li {
     margin-bottom: 1em; }
+
+.tags li.span-10 .experience-time {
+  position: absolute; }
+
+@media (max-width: 679px) {
+  .tags li.span-9 .experience-time {
+    position: absolute; } }
+
+@media (max-width: 479px) {
+  .tags li.span-8 .experience-time {
+    position: absolute; } }
 
 .button, .subtle-button,
 .subtle-button:link,
@@ -117,37 +205,126 @@ h6 {
   flex-direction: row; }
 
 .col-xs-1 {
-  width: 8.33%; }
+  width: 8.33333333%; }
+
+.col-xs-offset-1 {
+  margin-left: 8.33333333%; }
 
 .col-xs-2, .enrollments li .course-year {
-  width: 16.66%; }
+  width: 16.66666667%; }
 
-.col-xs-3, .enrollments li .course-details .course-duration {
+.col-xs-offset-2, .enrollments li .course-details .course-duration {
+  margin-left: 16.66666667%; }
+
+.col-xs-3, .enrollments li .course-details .course-duration, .social-media-list .sm-name {
   width: 25%; }
 
-.col-xs-4, .enrollments li .row.inline .course-title, .enrollments li .inline.course-details .course-title {
-  width: 33.33%; }
+.col-xs-offset-3 {
+  margin-left: 25%; }
 
-.col-xs-5, .social-media-list .sm-name {
-  width: 41.67%; }
+.col-xs-4, .enrollments li .row.inline .course-title, .enrollments li .inline.course-details .course-title {
+  width: 33.33333333%; }
+
+.col-xs-offset-4 {
+  margin-left: 33.33333333%; }
+
+.col-xs-5 {
+  width: 41.66666667%; }
+
+.col-xs-offset-5 {
+  margin-left: 41.66666667%; }
 
 .col-xs-6, .enrollments li .row.inline .course-author, .enrollments li .inline.course-details .course-author {
   width: 50%; }
 
-.col-xs-7, .enrollments li .course-details .course-author, .social-media-list .username {
-  width: 58.33%; }
+.col-xs-offset-6 {
+  margin-left: 50%; }
+
+.col-xs-7, .enrollments li .course-details .course-author {
+  width: 58.33333333%; }
+
+.col-xs-offset-7 {
+  margin-left: 58.33333333%; }
 
 .col-xs-8 {
   width: 66.66666667%; }
 
+.col-xs-offset-8 {
+  margin-left: 66.66666667%; }
+
+.col-xs-9, .social-media-list .sm-link {
+  width: 75%; }
+
+.col-xs-offset-9 {
+  margin-left: 75%; }
+
 .col-xs-10, .enrollments li .course-title {
-  width: 83.33%; }
+  width: 83.33333333%; }
 
-.col-xs-offset-1 {
-  margin-left: 8.33%; }
+.col-xs-offset-10 {
+  margin-left: 83.33333333%; }
 
-.col-xs-offset-2, .enrollments li .course-details .course-duration {
-  margin-left: 16.66%; }
+.col-xs-11 {
+  width: 91.66666667%; }
+
+.col-xs-offset-11 {
+  margin-left: 91.66666667%; }
+
+.col-xs-12 {
+  width: 100%; }
+
+.col-xs-offset-12 {
+  margin-left: 100%; }
+
+@media (min-width: 480px) {
+  .col-m-1 {
+    width: 8.33333333%; }
+  .col-m-offset-1 {
+    margin-left: 8.33333333%; }
+  .col-m-2 {
+    width: 16.66666667%; }
+  .col-m-offset-2 {
+    margin-left: 16.66666667%; }
+  .col-m-3 {
+    width: 25%; }
+  .col-m-offset-3 {
+    margin-left: 25%; }
+  .col-m-4 {
+    width: 33.33333333%; }
+  .col-m-offset-4 {
+    margin-left: 33.33333333%; }
+  .col-m-5, .social-media-list .sm-name {
+    width: 41.66666667%; }
+  .col-m-offset-5 {
+    margin-left: 41.66666667%; }
+  .col-m-6 {
+    width: 50%; }
+  .col-m-offset-6 {
+    margin-left: 50%; }
+  .col-m-7, .social-media-list .sm-link {
+    width: 58.33333333%; }
+  .col-m-offset-7 {
+    margin-left: 58.33333333%; }
+  .col-m-8 {
+    width: 66.66666667%; }
+  .col-m-offset-8 {
+    margin-left: 66.66666667%; }
+  .col-m-9 {
+    width: 75%; }
+  .col-m-offset-9 {
+    margin-left: 75%; }
+  .col-m-10 {
+    width: 83.33333333%; }
+  .col-m-offset-10 {
+    margin-left: 83.33333333%; }
+  .col-m-11 {
+    width: 91.66666667%; }
+  .col-m-offset-11 {
+    margin-left: 91.66666667%; }
+  .col-m-12 {
+    width: 100%; }
+  .col-m-offset-12 {
+    margin-left: 100%; } }
 
 .enrollments {
   font-size: 85%; }
@@ -193,6 +370,7 @@ i.fas {
   width: 20px; }
 
 section.intro {
+  line-height: 1.5;
   padding-bottom: 5em;
   padding-top: 4em; }
 
@@ -223,9 +401,11 @@ section.intro {
     right: calc((100% - 100%)/2); }
 
 @media (max-width: 679px) {
+  section.intro .avatar {
+    margin-bottom: 20px; }
   section.intro blockquote {
-    margin-left: 10px;
-    margin-right: 10px; } }
+    margin-left: 20px;
+    margin-right: 20px; } }
 
 a:hover,
 a:link,
@@ -327,11 +507,14 @@ section > .graph {
 
 @media (max-width: 679px) {
   section {
-    padding-bottom: 2em;
-    padding-top: 2em; }
+    padding-top: 34px;
+    padding-bottom: 34px; }
+    section:before {
+      margin-left: -34px;
+      width: calc(100% + 68px); }
   .container {
-    padding-left: 2em;
-    padding-right: 2em; } }
+    padding-left: 34px;
+    padding-right: 34px; } }
 
 @media (min-width: 680px) {
   .container {
@@ -666,37 +849,126 @@ img {
   flex-direction: row; }
 
 .col-xs-1 {
-  width: 8.33%; }
+  width: 8.33333333%; }
+
+.col-xs-offset-1 {
+  margin-left: 8.33333333%; }
 
 .col-xs-2, .enrollments li .course-year {
-  width: 16.66%; }
+  width: 16.66666667%; }
 
-.col-xs-3, .enrollments li .course-details .course-duration {
+.col-xs-offset-2, .enrollments li .course-details .course-duration {
+  margin-left: 16.66666667%; }
+
+.col-xs-3, .enrollments li .course-details .course-duration, .social-media-list .sm-name {
   width: 25%; }
 
-.col-xs-4, .enrollments li .row.inline .course-title, .enrollments li .inline.course-details .course-title {
-  width: 33.33%; }
+.col-xs-offset-3 {
+  margin-left: 25%; }
 
-.col-xs-5, .social-media-list .sm-name {
-  width: 41.67%; }
+.col-xs-4, .enrollments li .row.inline .course-title, .enrollments li .inline.course-details .course-title {
+  width: 33.33333333%; }
+
+.col-xs-offset-4 {
+  margin-left: 33.33333333%; }
+
+.col-xs-5 {
+  width: 41.66666667%; }
+
+.col-xs-offset-5 {
+  margin-left: 41.66666667%; }
 
 .col-xs-6, .enrollments li .row.inline .course-author, .enrollments li .inline.course-details .course-author {
   width: 50%; }
 
-.col-xs-7, .enrollments li .course-details .course-author, .social-media-list .username {
-  width: 58.33%; }
+.col-xs-offset-6 {
+  margin-left: 50%; }
+
+.col-xs-7, .enrollments li .course-details .course-author {
+  width: 58.33333333%; }
+
+.col-xs-offset-7 {
+  margin-left: 58.33333333%; }
 
 .col-xs-8 {
   width: 66.66666667%; }
 
+.col-xs-offset-8 {
+  margin-left: 66.66666667%; }
+
+.col-xs-9, .social-media-list .sm-link {
+  width: 75%; }
+
+.col-xs-offset-9 {
+  margin-left: 75%; }
+
 .col-xs-10, .enrollments li .course-title {
-  width: 83.33%; }
+  width: 83.33333333%; }
 
-.col-xs-offset-1 {
-  margin-left: 8.33%; }
+.col-xs-offset-10 {
+  margin-left: 83.33333333%; }
 
-.col-xs-offset-2, .enrollments li .course-details .course-duration {
-  margin-left: 16.66%; }
+.col-xs-11 {
+  width: 91.66666667%; }
+
+.col-xs-offset-11 {
+  margin-left: 91.66666667%; }
+
+.col-xs-12 {
+  width: 100%; }
+
+.col-xs-offset-12 {
+  margin-left: 100%; }
+
+@media (min-width: 480px) {
+  .col-m-1 {
+    width: 8.33333333%; }
+  .col-m-offset-1 {
+    margin-left: 8.33333333%; }
+  .col-m-2 {
+    width: 16.66666667%; }
+  .col-m-offset-2 {
+    margin-left: 16.66666667%; }
+  .col-m-3 {
+    width: 25%; }
+  .col-m-offset-3 {
+    margin-left: 25%; }
+  .col-m-4 {
+    width: 33.33333333%; }
+  .col-m-offset-4 {
+    margin-left: 33.33333333%; }
+  .col-m-5, .social-media-list .sm-name {
+    width: 41.66666667%; }
+  .col-m-offset-5 {
+    margin-left: 41.66666667%; }
+  .col-m-6 {
+    width: 50%; }
+  .col-m-offset-6 {
+    margin-left: 50%; }
+  .col-m-7, .social-media-list .sm-link {
+    width: 58.33333333%; }
+  .col-m-offset-7 {
+    margin-left: 58.33333333%; }
+  .col-m-8 {
+    width: 66.66666667%; }
+  .col-m-offset-8 {
+    margin-left: 66.66666667%; }
+  .col-m-9 {
+    width: 75%; }
+  .col-m-offset-9 {
+    margin-left: 75%; }
+  .col-m-10 {
+    width: 83.33333333%; }
+  .col-m-offset-10 {
+    margin-left: 83.33333333%; }
+  .col-m-11 {
+    width: 91.66666667%; }
+  .col-m-offset-11 {
+    margin-left: 91.66666667%; }
+  .col-m-12 {
+    width: 100%; }
+  .col-m-offset-12 {
+    margin-left: 100%; } }
 
 .social-media-list {
   margin-top: 0;
@@ -706,12 +978,19 @@ img {
     .social-media-list li:not(:first-child) {
       margin-top: 1.5em; }
   .social-media-list .sm-name {
-    padding-right: 2em;
     text-align: right; }
   .social-media-list .username {
     border-bottom: 0 none; }
     .social-media-list .username:hover {
       text-decoration: underline; }
+
+@media (max-width: 479px) {
+  .sm-name {
+    padding-right: 1.1em; } }
+
+@media (min-width: 480px) {
+  .sm-name {
+    padding-right: 2em; } }
 
 .social-media-list {
   position: relative; }
