@@ -55,9 +55,8 @@ section:before {
   height: 40px; }
 
 section h2 {
-  margin: 0;
-  padding-top: 2em;
-  padding-bottom: 2em; }
+  margin: 2em 0;
+  padding: 0; }
 
 .section-intro-text {
   font-size: 15px;
@@ -351,6 +350,9 @@ body,
 section {
   font-family: "Open Sans", "Helvetica Neue", "Arial", sans-serif; }
 
+.small {
+  font-size: 70%; }
+
 body {
   background-color: #f0f0f0; }
 
@@ -361,8 +363,10 @@ footer {
   border-top: 1px solid #e8e8e8;
   padding-top: 1em;
   padding-bottom: 1em; }
-  footer ul {
-    color: #e8e8e8; }
+  footer .footer-heading {
+    color: #929292; }
+  footer .license {
+    color: #AAA; }
 
 i.fab,
 i.far,
@@ -384,9 +388,9 @@ section.intro {
     display: block;
     width: 25%;
     height: 1px;
-    background-color: #dfdfdf !important;
+    border-top: 1px solid #dfdfdf;
     position: absolute;
-    top: 0;
+    top: -1px;
     left: calc((100% - 25%)/2);
     right: calc((100% - 25%)/2); }
   .section-intro-text:after {
@@ -483,9 +487,8 @@ section:before {
   height: 40px; }
 
 section h2 {
-  margin: 0;
-  padding-top: 2em;
-  padding-bottom: 2em; }
+  margin: 2em 0;
+  padding: 0; }
 
 .section-intro-text {
   font-size: 15px;
@@ -621,7 +624,8 @@ nav {
   background-color: white;
   border-bottom-color: #cccccc; }
   nav .pseudo-avatar {
-    background-color: #c2b5de; }
+    background-color: #ccbad4;
+    background: linear-gradient(160deg, #e0c9f2 0%, #e0c9f2 50%, #ccbad4 50%); }
   nav li a,
   nav li a:hover,
   nav li a:link,
@@ -723,9 +727,9 @@ nav li a {
     display: block;
     width: 25%;
     height: 1px;
-    background-color: #dfdfdf !important;
+    border-top: 1px solid #dfdfdf;
     position: absolute;
-    top: 0;
+    top: -1px;
     left: calc((100% - 25%)/2);
     right: calc((100% - 25%)/2); }
   .overview .overview-item .content {
@@ -999,9 +1003,9 @@ img {
     display: block;
     width: 25%;
     height: 1px;
-    background-color: #dfdfdf !important;
+    border-top: 1px solid #dfdfdf;
     position: absolute;
-    top: 0;
+    top: -1px;
     left: calc((100% - 25%)/2);
     right: calc((100% - 25%)/2); }
 
@@ -1032,6 +1036,12 @@ nav {
 .strike-through {
   text-decoration: line-through;
   font-style: italic; }
+
+body *:not(.with-mass), body *:not(.with-mass):before, body *:not(.with-mass):after {
+  transition: border-color 1s; }
+
+body.with-gravity *:not(.with-physics), body.with-gravity *:not(.with-physics):before, body.with-gravity *:not(.with-physics):after {
+  border-color: transparent !important; }
 
 .main.container .avatar {
   border-radius: 50%;
