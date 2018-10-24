@@ -1,10 +1,7 @@
 const maxNodes = 200;
-const dpi = 113.5;
-const dotsPerCentimeter = dpi / 2.54;
 const pixelsPerMeter = 10;
 const gravityFactor = 9.81;
 const precision = 3;
-const fps = 60;
 const boxes = [];
 let gravity;
 let world;
@@ -14,16 +11,20 @@ let groundShape;
 let box2d;
 let documentWidth;
 let documentHeight;
+let started = false;
 let stopped = false;
+let previousTimestamp;
 
-Box2D().then(function (b) {
-  box2d = b;
-  gravity = new box2d.b2Vec2(0.0, -gravityFactor);
-  world = new box2d.b2World(gravity);
-  bd_ground = new box2d.b2BodyDef();
-  ground = world.CreateBody(bd_ground);
-  groundShape = new box2d.b2EdgeShape();
-});
+function initBox2D () {
+  Box2D().then(function (b) {
+    box2d = b;
+    gravity = new box2d.b2Vec2(0.0, -gravityFactor);
+    world = new box2d.b2World(gravity);
+    bd_ground = new box2d.b2BodyDef();
+    ground = world.CreateBody(bd_ground);
+    groundShape = new box2d.b2EdgeShape();
+  });
+}
 
 function triggerFall() {
   if (typeof gravity === 'undefined' || typeof box2d === 'undefined') {
@@ -33,17 +34,9 @@ function triggerFall() {
   documentHeight = window.innerHeight;
   groundShape.Set(new box2d.b2Vec2(0.0, 0.0), new box2d.b2Vec2(documentWidth / pixelsPerMeter, 0.0));
   ground.CreateFixture(groundShape, 0.0);
-  getNNodes({maxNodes}).map(function (el) {
-    // CSS transform properties don't seem to have effect on inline elements,
-    // so we replace `inline` by `inline-block`.
-    const computedStyle = window.getComputedStyle(el)
-    const displayProp = computedStyle.getPropertyValue('display')
-    if (displayProp === 'inline') {
-      el.style.display = 'inline-block'
-    }
-    // Also, hard-code the width and height to avoid surprises...
-    el.style.width = computedStyle.getPropertyValue('width');
-    el.style.height = computedStyle.getPropertyValue('height');
+  const layoutProps = [];
+  const nodes = getNNodes({maxNodes});
+  nodes.forEach(function (el) {
     const box = el.getBoundingClientRect();
     const left = box.left;
     const top = box.top;
@@ -56,6 +49,17 @@ function triggerFall() {
       x: left + width / 2,
       y: top + height / 2
     };
+    layoutProps.push({
+      left: box.left + 'px',
+      top: box.top + 'px',
+      width: width + 'px',
+      height: height + 'px',
+      position: 'fixed',
+      'min-width': 'unset',
+      'max-width': 'unset',
+      'min-height': 'unset',
+      'max-height': 'unset'
+    });
     const shape = new box2d.b2PolygonShape();
     shape.SetAsBox((width / 2) / pixelsPerMeter, (height / 2) / pixelsPerMeter);
     const bodyDefinition = new box2d.b2BodyDef();
@@ -74,29 +78,38 @@ function triggerFall() {
       body: body
     });
   });
-  let previous = undefined;
-
-  function step(timestamp) {
-    if (!previous) previous = timestamp;
-    const progress = timestamp - previous;
-    previous = timestamp;
-    world.Step(progress / 1000, precision, precision);
-    let x, y, position, angle;
-    for (const box of boxes) {
-      position = box.body.GetPosition();
-      angle = -box.body.GetAngle();
-      x = position.get_x() * pixelsPerMeter - box.originalCenter.x;
-      y = documentHeight - position.get_y() * pixelsPerMeter - box.originalCenter.y;
-      box.domElement.style.transform = 'translate(' + x + 'px, ' + y + 'px) rotate(' + angle + 'rad)';
+  nodes.forEach(function (node, index) {
+    node.classList.add('with-mass');
+    // CSS transform properties don't seem to have effect on inline elements,
+    // so we replace `inline` by `inline-block`.
+    const computedStyle = window.getComputedStyle(node);
+    const displayProp = computedStyle.getPropertyValue('display');
+    if (displayProp === 'inline') {
+      node.style.display = 'inline-block';
     }
-    if (!stopped) requestAnimationFrame(step);
-  }
+  });
   // Disable scrolling
-  document.body.style.transform = 'translateY(-' + window.scrollY + 'px)';
   document.body.style.overflow = 'hidden';
-  window.scroll(0, 0);
-  window.requestAnimationFrame(step);
+  started = true;
+  requestAnimationFrame(step);
 }
+
+function step(timestamp) {
+  if (!previousTimestamp) previousTimestamp = timestamp;
+  const progress = timestamp - previousTimestamp;
+  previousTimestamp = timestamp;
+  world.Step(progress / 1000, precision, precision);
+  let x, y, position, angle;
+  for (const box of boxes) {
+    position = box.body.GetPosition();
+    angle = -box.body.GetAngle();
+    x = position.get_x() * pixelsPerMeter - box.originalCenter.x;
+    y = documentHeight - position.get_y() * pixelsPerMeter - box.originalCenter.y;
+    box.domElement.style.transform = 'translate(' + x + 'px, ' + y + 'px) rotate(' + angle + 'rad)';
+  }
+  if (!stopped) requestAnimationFrame(step);
+}
+
 
 // Get tree nodes going as deep as possible in the tree before surpassing a certain limit in the number of nodes
 function getNNodes({ nodes = [document.body], maxNodes = 10 }) {
@@ -108,7 +121,9 @@ function getNNodes({ nodes = [document.body], maxNodes = 10 }) {
       continue;
     }
     const box = node.getBoundingClientRect();
-    if (box.top - window.scrollY > documentHeight || box.right - window.scrollX > documentWidth) {
+    const invisible = node.computedStyleMap().get('visibility').value === 'hidden';
+    const outOfView = box.top - window.scrollY > documentHeight || box.right - window.scrollX > documentWidth;
+    if (invisible || outOfView) {
       continue;
     }
     if (node.childElementCount && !(hasOwnText(node))) {
@@ -119,7 +134,6 @@ function getNNodes({ nodes = [document.body], maxNodes = 10 }) {
       })
     } else {
       // Just add the node
-      node.classList.add('with-mass')
       newNodes.push(node);
     }
   }
@@ -143,17 +157,26 @@ function getOwnText(node) {
   return [].reduce.call(node.childNodes, function(a, b) { return a + (b.nodeType === 3 ? b.textContent : ''); }, '')
 }
 
-function stop() {
-  stopped = true
+function toggle() {
+  if (!started) {
+    return;
+  }
+  stopped = !stopped;
+  if (!stopped) {
+    previousTimestamp = performance.now();
+    requestAnimationFrame(step);
+  }
 }
 
+initBox2D();
+
 document.addEventListener('keyup', (event) => {
-  document.body.classList.add('with-gravity')
   switch (event.key) {
     case 'Escape':
-      stop()
-      break
+      toggle();
+      break;
     case 'g':
-      triggerFall()
+      document.body.classList.add('with-gravity');
+      triggerFall();
   }
 });
