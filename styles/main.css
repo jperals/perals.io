@@ -1,4 +1,10 @@
 @charset "UTF-8";
+body.with-gravity *:not(.with-mass), body.with-gravity *:not(.with-mass):before, body.with-gravity *:not(.with-mass):after {
+  transition: border-color 1s; }
+
+body.with-gravity *:not(.with-physics), body.with-gravity *:not(.with-physics):before, body.with-gravity *:not(.with-physics):after {
+  border-color: transparent !important; }
+
 .avatar {
   border-radius: 50%;
   background-color: #DDD; }
@@ -346,9 +352,37 @@ h6 {
     .enrollments li .course-details {
       margin: .4em 0 2.5em 0; }
 
+@font-face {
+  font-family: 'Work Sans';
+  src: url("/fonts/work-sans/WorkSans-Regular.otf"); }
+
+@font-face {
+  font-family: 'Work Sans';
+  font-style: italic;
+  src: url("/fonts/work-sans/WorkSans-Italic.otf"); }
+
+@font-face {
+  font-family: 'Work Sans';
+  font-weight: bold;
+  src: url("/fonts/work-sans/WorkSans-SemiBold.otf"); }
+
+@font-face {
+  font-family: 'Work Sans';
+  font-weight: bold;
+  font-style: italic;
+  src: url("/fonts/work-sans/WorkSans-SemiBoldItalic.otf"); }
+
 body,
 section {
-  font-family: "Open Sans", "Helvetica Neue", "Arial", sans-serif; }
+  font-family: "Work Sans", "Open Sans", "Helvetica Neue", "Arial", sans-serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", "Helvetica Neue", "Arial", sans-serif; }
 
 .small {
   font-size: 70%; }
@@ -372,6 +406,13 @@ i.fab,
 i.far,
 i.fas {
   width: 20px; }
+
+.img-comment {
+  font-style: italic;
+  margin-top: 0;
+  margin-bottom: 3em; }
+  .img-comment em {
+    font-weight: bold; }
 
 section.intro {
   line-height: 1.5;
@@ -410,6 +451,41 @@ section.intro {
   section.intro blockquote {
     margin-left: 20px;
     margin-right: 20px; } }
+
+.enlarge,
+#lightbox {
+  cursor: pointer; }
+
+#lightbox {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  transition: opacity .3s;
+  opacity: 0; }
+  #lightbox .lightbox-image {
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    top: 30px;
+    bottom: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; }
+
+body.with-lightbox {
+  overflow: hidden; }
+  body.with-lightbox > .main {
+    overflow-y: scroll; }
+  body.with-lightbox > .footer,
+  body.with-lightbox > .main,
+  body.with-lightbox > nav {
+    filter: blur(5px); }
 
 a:hover,
 a:link,
@@ -558,12 +634,12 @@ h6 {
   padding-top: 4em;
   padding-bottom: 4em; }
   .main.home .avatar {
-    background-color: #eae7f2; }
+    background-color: #d0d0ef; }
   .main.home .markdown blockquote {
     border-left: 0 none; }
   .main.home section {
     color: #929292;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: normal; }
     .main.home section:not(:first-child):before {
       border-bottom: 1px solid #BBB; }
@@ -689,12 +765,15 @@ nav {
       padding-bottom: calc(0.8em - 1px); }
 
 @media (min-width: 680px) {
-  nav ul {
+  nav {
     opacity: 0; }
-  nav:not(.hidden) {
-    visibility: visible; }
-    nav:not(.hidden) ul {
-      opacity: 1; } }
+    nav ul {
+      opacity: 0; }
+    nav:not(.hidden) {
+      opacity: 1;
+      visibility: visible; }
+      nav:not(.hidden) ul {
+        opacity: 1; } }
 
 nav a,
 nav a:link,
@@ -703,14 +782,15 @@ nav a:hover {
   border-bottom: 0 none;
   text-decoration: none; }
 
-nav .pseudo-avatar {
-  transition: color 200ms, transform 200ms; }
-  nav .pseudo-avatar:hover {
-    opacity: 1;
-    transform: scale(1.1); }
-
-nav li a {
-  transition: color .3s; }
+nav {
+  transition: opacity 1s !important; }
+  nav .section-links .pseudo-avatar {
+    transition: color 200ms, transform 200ms; }
+    nav .section-links .pseudo-avatar:hover {
+      opacity: 1;
+      transform: scale(1.1); }
+  nav li a {
+    transition: color .3s; }
 
 .overview .overview-item {
   position: relative;
@@ -1036,12 +1116,6 @@ nav {
 .strike-through {
   text-decoration: line-through;
   font-style: italic; }
-
-body *:not(.with-mass), body *:not(.with-mass):before, body *:not(.with-mass):after {
-  transition: border-color 1s; }
-
-body.with-gravity *:not(.with-physics), body.with-gravity *:not(.with-physics):before, body.with-gravity *:not(.with-physics):after {
-  border-color: transparent !important; }
 
 .main.container .avatar {
   border-radius: 50%;

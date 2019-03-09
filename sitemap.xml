@@ -52,6 +52,10 @@
   </url>
   
   <url>
+    <loc>/projects/colors-of-twitter/</loc>
+  </url>
+  
+  <url>
     <loc>/tags/css/</loc>
     <priority>0</priority>
   </url>
@@ -110,12 +114,27 @@
   </url>
   
   <url>
+    <loc>/tags/maps/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/mongodb/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/mqtt/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/node/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/node.js/</loc>
     <priority>0</priority>
   </url>
   
@@ -181,6 +200,16 @@
   
   <url>
     <loc>/projects/terra-cognita/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/twitter/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/visualization/</loc>
+    <priority>0</priority>
   </url>
   
   <url>

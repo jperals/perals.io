@@ -9,14 +9,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="referrer" content="no-referrer">
 
-<meta name="description" content="How would computer programming look like if we could reinvent it now from the ground up?
-With this project I wanted to radically question the way we program. Why do we type code at all? Maybe we could just use visual symbols. And then maybe we could even write programs by just doodling manual sketches that the computer would interpret and run for us —after all, computers should be getting smart enough to be able to interpret human language instead of the other way around.">
+<meta name="description" content="Basically by combining Twitter feed data (90 million tweets and counting) with a language detector (together with some geometric post-processing, and lots of hours of coding), I was able to offer a quite detailed look at the language geography of the Twitter universe.
+(Note: to compensate the dominance of English on Twitter, I manually limited the boundaries of this language in particular.)
+I can generate GeoJSON output, which can be displayed as an interactive map:">
 
-<meta property="og:title" content="Doodlescript" />
-<meta property="og:description" content="How would computer programming look like if we could reinvent it now from the ground up?
-With this project I wanted to radically question the way we program. Why do we type code at all? Maybe we could just use visual symbols. And then maybe we could even write programs by just doodling manual sketches that the computer would interpret and run for us —after all, computers should be getting smart enough to be able to interpret human language instead of the other way around." />
+<meta property="og:title" content="Colors of Twitter" />
+<meta property="og:description" content="Basically by combining Twitter feed data (90 million tweets and counting) with a language detector (together with some geometric post-processing, and lots of hours of coding), I was able to offer a quite detailed look at the language geography of the Twitter universe.
+(Note: to compensate the dominance of English on Twitter, I manually limited the boundaries of this language in particular.)
+I can generate GeoJSON output, which can be displayed as an interactive map:" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/projects/doodlescript/" />
+<meta property="og:url" content="/projects/colors-of-twitter/" />
 
 
 
@@ -37,10 +39,10 @@ With this project I wanted to radically question the way we program. Why do we t
 <title>
 
 
-     Doodlescript 
+     Colors of Twitter 
 
 </title>
-<link rel="canonical" href="/projects/doodlescript/">
+<link rel="canonical" href="/projects/colors-of-twitter/">
 
 
 
@@ -95,47 +97,55 @@ With this project I wanted to radically question the way we program. Why do we t
                 <div class="page-heading">
     <h1>
         
-        Doodlescript
+        Colors of Twitter
         
     </h1>
 </div>
 
                 <div class="markdown copy-text">
-                    <p>How would computer programming look like if we could reinvent it now from the ground up?</p>
+                    <p>Basically by combining Twitter feed data (90 million tweets and counting) with a language detector (together with some geometric post-processing, and lots of hours of coding), I was able to offer a quite detailed look at the language geography of the Twitter universe.</p>
 
-<p>With this project I wanted to <em>radically question the way we program</em>. Why do we type code at all? Maybe we could just use visual symbols. And then maybe we could even write programs by just doodling manual sketches that the computer would interpret and run for us —after all, computers should be getting smart enough to be able to interpret human language instead of the other way around.</p>
+<p>(Note: to compensate the dominance of English on Twitter, I manually limited the boundaries of this language in particular.)</p>
 
-<p>Together with my colleague Benjamin Skirlo we won the <em>main prize of the Angelhack Berlin 2016 hackathon</em> with a proof of concept of this idea.</p>
+<p>I can generate GeoJSON output, which can be displayed as an interactive map:</p>
 
-<p><img class="use-case-image" alt="Use case 1" src="img/doodlescript-01.png"></p>
+<iframe src="https://jperals.github.io/colors-of-twitter/#embed" width="100%" height="450" frameborder="0"></iframe>
 
-<p>Use case 1:</p>
+<p>And also static PNG images, which can be useful to share highlights about specific regions:</p>
 
-<ul>
-<li>Draw a toggle button and a light bulb, then a line between them</li>
-<li>Pair the lightbulb with a real one</li>
-<li>Now we can interact with the real light bulb by pressing our drawn toggle</li>
-</ul>
+<div>
+    <img alt="Africa" class="enlarge" src="img/map-20190307-1551994567978-504409points.png">
+</div>
 
-<p><img class="use-case-image" alt="Use case 2" src="img/doodlescript-02.png"></p>
+<p class="img-comment">
+<em>Africa</em>: Considering how Twitter users often choose the language with a biggest audience, I am happy about the language diversity that shows up in Africa, especially in the South, the East, and the Gulf of Guinea.
+</p>
 
-<p>Use case 2:</p>
+<div>
+<img class="enlarge" src="img/map-20190307-1551990717706-504084points.png"/>
+</div>
+<p class="img-comment">
+<em>Catalan</em>: The Catalan language appears intermixed with Spanish in the way I would have more or less expected, with Catalan dominating in inner Catalonia and Spanish dominating in most coastal areas, as well as in most of the Valencian Country and the Balearic Islands.
+</p>
 
-<ul>
-<li>Draw a moon (symbol for night), a person, a light bulb and connect them all through an &ldquo;and&rdquo; sign as in the picture</li>
-<li>Pair the lightbulb with a real one and the other two drawings with corresponding sensor systems (e.g, based on light sensor, motion sensor)</li>
-<li>Now the light will switch on when it&rsquo;s night time <em>and</em> someone is in the room.</li>
-</ul>
+<div>
+<img alt="Europe" class="enlarge" src="img/map-20190307-1551993116891-504273points.png"/>
+<div>
+<p class="img-comment">
+<em>Europe</em>: Most of the European language boundaries strongly follow state boundaries, with the notable exception of minoritarian languages like Basque, Catalan, Galician, Norwegian Nynorsk, Welsh... Belgium, roughly split in two halves, is also an interesting case.
+</p>
 
-<p><img class="use-case-image" alt="Use case 3" src="img/doodlescript-03.png"></p>
 
-<p>Use case 3:</p>
+<div class="columns two-columns fit">
+<div><img alt="Languages of India including English" class="enlarge" src="img/map-20190209-1549671272755-350693points.png"></div>
+<div><img alt="Languages of India excluding English" class="enlarge" src="img/map-20190209-1549669541369-323844points.png"></div>
+</div>
 
-<ul>
-<li>Draw a toggle, a symbol for ten seconds and a rocket</li>
-<li>Pair the rocket with a real one (sure you have one at home)</li>
-<li>I&rsquo;d suggest to run!</li>
-</ul>
+<p class="img-comment">
+<em>India</em> including English (left) and without including English (right). A Twitter user <a href="https://twitter.com/kr__sunder/status/1089142503406587904">pointed out</a> that Hindi is the preferred lingua franca in Northern India, and English in the South.
+</p>
+
+<p>To know more about this project, see: <a href="https://jperals.github.com/colors-of-twitter">https://jperals.github.com/colors-of-twitter</a></p>
 
                 </div>
             </div>
