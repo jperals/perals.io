@@ -16,8 +16,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/projects/colors-of-twitter/</guid>
-      <description>Basically by combining Twitter feed data (90 million tweets and counting) with a language detector (together with some geometric post-processing, and lots of hours of coding), I was able to offer a quite detailed look at the language geography of the Twitter universe.
-(Note: to compensate the dominance of English on Twitter, I manually limited the boundaries of this language in particular.)
+      <description>Basically by combining Twitter feed data (100 million tweets and counting) with a language detector (together with some geometric post-processing, and lots of hours of coding), I was able to offer a quite detailed look at the language geography of the Twitter universe.
+Note: to compensate the dominance of English on Twitter, I manually limited the boundaries of this language in particular.
 I can generate GeoJSON output, which can be displayed as an interactive map:</description>
     </item>
     
