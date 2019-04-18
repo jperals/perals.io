@@ -27,9 +27,10 @@ function initBox2D () {
 }
 
 function triggerFall() {
-  if (typeof gravity === 'undefined' || typeof box2d === 'undefined') {
+  if (started || typeof gravity === 'undefined' || typeof box2d === 'undefined') {
     return;
   }
+  document.body.classList.add('with-gravity');
   documentWidth = window.innerWidth;
   documentHeight = window.innerHeight;
   groundShape.Set(new box2d.b2Vec2(0.0, 0.0), new box2d.b2Vec2(documentWidth / pixelsPerMeter, 0.0));
@@ -117,11 +118,14 @@ function getNNodes({ nodes = [document.body], maxNodes = 10 }) {
   let someHasChildren = false;
   for (let i = 0; i < nodes.length; i++) {
     let node = nodes[i];
-    if (node.tagName === 'SCRIPT' || node.tagName === 'STYLE') {
+    if (node.tagName === 'SCRIPT' || node.tagName === 'STYLE' || node.classList.contains('no-physics')) {
+      if(node.classList.contains('physics-hide')) {
+        node.setAttribute('style', 'visibility: hidden');
+      }
       continue;
     }
     const box = node.getBoundingClientRect();
-    const invisible = node.computedStyleMap().get('visibility').value === 'hidden';
+    const invisible = window.getComputedStyle(node).visibility === 'hidden';
     const outOfView = box.top - window.scrollY > documentHeight || box.right - window.scrollX > documentWidth;
     if (invisible || outOfView) {
       continue;
@@ -169,16 +173,31 @@ function toggle() {
 }
 
 initBox2D();
+initButton('#danger-button');
 
-document.addEventListener('keyup', (event) => {
-  switch (event.key) {
-    case 'Escape':
-      toggle();
-      break;
-    case 'g':
-      if(!started) {
-        document.body.classList.add('with-gravity');
+function initKey() {
+  document.addEventListener('keyup', (event) => {
+    switch (event.key) {
+      case 'Escape':
+        toggle();
+        break;
+      case 'g':
         triggerFall();
-      }
-  }
-});
+    }
+  });
+}
+
+function initButton (selector) {
+  const dangerButton = document.querySelector(selector);
+  if (!dangerButton) return;
+  const initialDangerButtonText = dangerButton.innerText;
+  dangerButton.addEventListener('click', function () {
+    if(started) {
+      toggle();
+      dangerButton.innerText = initialDangerButtonText;
+    } else {
+      triggerFall();
+      dangerButton.innerText = 'I told you!';
+    }
+  });
+}

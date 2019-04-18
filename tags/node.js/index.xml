@@ -11,14 +11,24 @@
     
     
     <item>
+      <title></title>
+      <link>/jobs/2012-ixds/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/jobs/2012-ixds/</guid>
+      <description>At IXDS I have the opportunity to contribute to top emerging design projects by helping make UX concepts tangible.
+One of the most interesting aspects of my work at IXDS is the close relationship between design and engineering —and one of its most challenging aspects is the need to work in quick iterations while allowing for mid-term development at the same time.</description>
+    </item>
+    
+    <item>
       <title>Colors of Twitter</title>
       <link>/projects/colors-of-twitter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/projects/colors-of-twitter/</guid>
       <description>Basically by combining Twitter feed data (100 million tweets and counting) with a language detector (together with some geometric post-processing, and lots of hours of coding), I was able to offer a quite detailed look at the language geography of the Twitter universe.
-Note: to compensate the dominance of English on Twitter, I manually limited the boundaries of this language in particular.
-I can generate GeoJSON output, which can be displayed as an interactive map:</description>
+By generating GeoJSON I can display the data in an interactive map:
+ And PNG output can also be useful to easily share highlights about specific regions:</description>
     </item>
     
   </channel>
