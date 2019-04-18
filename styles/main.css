@@ -76,7 +76,7 @@ section h2 {
     display: none; }
 
 section > .graph {
-  padding: 4em 0; }
+  padding: 0 0 4em 0; }
 
 .use-case-image {
   margin-top: 7.5em;
@@ -761,7 +761,7 @@ section h2 {
     display: none; }
 
 section > .graph {
-  padding: 4em 0; }
+  padding: 0 0 4em 0; }
 
 .use-case-image {
   margin-top: 7.5em;
@@ -957,8 +957,6 @@ nav {
     nav .pseudo-avatar:hover {
       opacity: 1;
       transform: scale(1.1); }
-  nav .technical-skills-link {
-    width: 1em; }
   nav ul {
     align-items: center;
     display: flex;
