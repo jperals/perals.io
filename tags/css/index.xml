@@ -1,14 +1,82 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Css on Joan Perals — Web Developer, Creative Technologist, Digital Craftsman</title>
+    <title>CSS on Joan Perals — Web Developer, Creative Technologist, Digital Craftsman</title>
     <link>/tags/css/</link>
-    <description>Recent content in Css on Joan Perals — Web Developer, Creative Technologist, Digital Craftsman</description>
+    <description>Recent content in CSS on Joan Perals — Web Developer, Creative Technologist, Digital Craftsman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Sat, 10 Aug 2019 20:58:55 +0000</lastBuildDate>
     
 	<atom:link href="/tags/css/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Organize CSS rulesets by their declarations&#39; purpose</title>
+      <link>/posts/66/</link>
+      <pubDate>Sat, 10 Aug 2019 20:58:55 +0000</pubDate>
+      
+      <guid>/posts/66/</guid>
+      <description>In CSS one is tempted to group all possible declarations of one selector together, so as to not repeat the selector. So if we find this:
+.selector-1 { ... } .selector-2 { ... } .selector-1 { ... } .selector-3 { ... }  We would merge the second ruleset with the selector .selector-1 into the first one that uses the same selector:
+.selector-1 { ... } .selector-2 { ... } .</description>
+    </item>
+    
+    <item>
+      <title>You can add CSS to console logs</title>
+      <link>/posts/62/</link>
+      <pubDate>Fri, 07 Dec 2018 09:47:54 +0000</pubDate>
+      
+      <guid>/posts/62/</guid>
+      <description>By adding c% at the beginning of the string, and a second string argument with CSS rules.
+Example:
+console.log(&#39;%cmessage&#39;, &#39;color: green;line-height:40px&#39;)  https://coderwall.com/p/fskzdw/colorful-console-log
+Tested on Firefox and Chrome.</description>
+    </item>
+    
+    <item>
+      <title>You can set CSS variables with JavaScript</title>
+      <link>/posts/60/</link>
+      <pubDate>Thu, 15 Nov 2018 17:46:54 +0000</pubDate>
+      
+      <guid>/posts/60/</guid>
+      <description>JavaScript:
+DOMElement.style.setProperty(&#39;--primary-color&#39;, &#39;yellow&#39;)  CSS:
+.my-element { background-color: var(--primary-color); }  An article with more information:
+https://medium.com/@_bengarrison/accessing-and-modifying-css-variables-with-javascript-2ccb735bbff0</description>
+    </item>
+    
+    <item>
+      <title>CSS `color` attribute doesn&#39;t only affect text</title>
+      <link>/posts/59/</link>
+      <pubDate>Thu, 25 Oct 2018 07:57:12 +0000</pubDate>
+      
+      <guid>/posts/59/</guid>
+      <description>Its value will also become the color for border and box-shadow, for example, unless those are explicitly set to some other value.
+See example: https://jsbin.com/wodevam/edit?css,output</description>
+    </item>
+    
+    <item>
+      <title>Hanging punctuation in CSS</title>
+      <link>/posts/57/</link>
+      <pubDate>Wed, 24 Oct 2018 21:05:11 +0000</pubDate>
+      
+      <guid>/posts/57/</guid>
+      <description>To make an initial punctuation mark appear hanging (not within the main text block).
+p { hanging-punctuation: first; }  From this nice article: https://betterwebtype.com/rhythm-in-web-typography</description>
+    </item>
+    
+    <item>
+      <title>CSS Multi-column Layout allows to dynamically break text into columns</title>
+      <link>/posts/23/</link>
+      <pubDate>Sun, 14 Oct 2018 14:12:18 +0000</pubDate>
+      
+      <guid>/posts/23/</guid>
+      <description>Simple example:
+.two-columns { column-count: 2; }  MDN docs about the CSS Multi-column layout: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Columns
+MDN docs about the CSS multi-column property in particular: https://developer.mozilla.org/en-US/docs/Web/CSS/column-count
+Simple Codepen usage example of the multi-column property: https://codepen.io/jperals/pen/MPEOxZ</description>
+    </item>
     
     <item>
       <title></title>

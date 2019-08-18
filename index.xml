@@ -12,11 +12,381 @@
     
     
     <item>
+      <title>Importing blog posts from Django to Hugo</title>
+      <link>/posts/68/</link>
+      <pubDate>Sun, 18 Aug 2019 22:12:10 +0000</pubDate>
+      
+      <guid>/posts/68/</guid>
+      <description>Last year I started a sort of basic markdown-based micro-blog just to jot down small software-related learnings. I hosted it on Heroku, which is free but sleeps after 30 minutes of inactivity. That&amp;rsquo;s OK for me as a user, but I would not want potential visitors to have to wait for the instance to wake up. At the same time, not sure it&amp;rsquo;s worth paying for Django hosting just for such a minor project.</description>
+    </item>
+    
+    <item>
+      <title>Stage specific lines with `git add -p`</title>
+      <link>/posts/67/</link>
+      <pubDate>Sun, 18 Aug 2019 21:36:15 +0000</pubDate>
+      
+      <guid>/posts/67/</guid>
+      <description>For example:
+git add -p my-file.js  will start an interactive prompt that will show every hunk (block of changed lines) in the file and ask if you want to stage it or not (among other options).
+https://stackoverflow.com/questions/4309156/commit-specific-lines-of-a-file-to-git</description>
+    </item>
+    
+    <item>
+      <title>Organize CSS rulesets by their declarations&#39; purpose</title>
+      <link>/posts/66/</link>
+      <pubDate>Sat, 10 Aug 2019 20:58:55 +0000</pubDate>
+      
+      <guid>/posts/66/</guid>
+      <description>In CSS one is tempted to group all possible declarations of one selector together, so as to not repeat the selector. So if we find this:
+.selector-1 { ... } .selector-2 { ... } .selector-1 { ... } .selector-3 { ... }  We would merge the second ruleset with the selector .selector-1 into the first one that uses the same selector:
+.selector-1 { ... } .selector-2 { ... } .</description>
+    </item>
+    
+    <item>
+      <title>`Math.max` and `Math.min` accept more than two arguments</title>
+      <link>/posts/65/</link>
+      <pubDate>Wed, 24 Jul 2019 19:49:21 +0000</pubDate>
+      
+      <guid>/posts/65/</guid>
+      <description>For example:
+Math.max(1, 3, 2); // Output: 3  Also this will work:
+const array = [1,3,2]; Math.max(...array); // Output: 3  See the Mozilla docs:
+ Math.max Math.min   </description>
+    </item>
+    
+    <item>
+      <title>The W3C has a wiki</title>
+      <link>/posts/64/</link>
+      <pubDate>Thu, 09 May 2019 07:17:03 +0000</pubDate>
+      
+      <guid>/posts/64/</guid>
+      <description>https://www.w3.org/wiki</description>
+    </item>
+    
+    <item>
+      <title>In JavaScript, a plus symbol (`&#43;`) in front of a variable casts it to a number</title>
+      <link>/posts/63/</link>
+      <pubDate>Wed, 08 May 2019 09:24:46 +0000</pubDate>
+      
+      <guid>/posts/63/</guid>
+      <description>For example, +&amp;quot;1&amp;quot; returns 1.
+If the value can&amp;rsquo;t be converted to number type, it will return NaN.
+For example , +&amp;quot;a&amp;quot; or +{} return NaN.</description>
+    </item>
+    
+    <item>
+      <title>You can add CSS to console logs</title>
+      <link>/posts/62/</link>
+      <pubDate>Fri, 07 Dec 2018 09:47:54 +0000</pubDate>
+      
+      <guid>/posts/62/</guid>
+      <description>By adding c% at the beginning of the string, and a second string argument with CSS rules.
+Example:
+console.log(&#39;%cmessage&#39;, &#39;color: green;line-height:40px&#39;)  https://coderwall.com/p/fskzdw/colorful-console-log
+Tested on Firefox and Chrome.</description>
+    </item>
+    
+    <item>
+      <title>Use the `time` Unix command before another command to know how long it took</title>
+      <link>/posts/61/</link>
+      <pubDate>Fri, 30 Nov 2018 12:05:47 +0000</pubDate>
+      
+      <guid>/posts/61/</guid>
+      <description>For example, instead of just:
+node .  You can do:
+time node .  to get some basic extra execution time numbers without the need of extra performance calculations from your app&amp;rsquo;s side.
+On Mac OS, the output looks like this:
+real 0m1.562s user 0m1.544s sys 0m0.167s  But it can vary among operative systems. More information for example on Wikipedia: https://en.wikipedia.org/wiki/Time_(Unix)</description>
+    </item>
+    
+    <item>
+      <title>You can set CSS variables with JavaScript</title>
+      <link>/posts/60/</link>
+      <pubDate>Thu, 15 Nov 2018 17:46:54 +0000</pubDate>
+      
+      <guid>/posts/60/</guid>
+      <description>JavaScript:
+DOMElement.style.setProperty(&#39;--primary-color&#39;, &#39;yellow&#39;)  CSS:
+.my-element { background-color: var(--primary-color); }  An article with more information:
+https://medium.com/@_bengarrison/accessing-and-modifying-css-variables-with-javascript-2ccb735bbff0</description>
+    </item>
+    
+    <item>
+      <title>CSS `color` attribute doesn&#39;t only affect text</title>
+      <link>/posts/59/</link>
+      <pubDate>Thu, 25 Oct 2018 07:57:12 +0000</pubDate>
+      
+      <guid>/posts/59/</guid>
+      <description>Its value will also become the color for border and box-shadow, for example, unless those are explicitly set to some other value.
+See example: https://jsbin.com/wodevam/edit?css,output</description>
+    </item>
+    
+    <item>
+      <title>Hanging punctuation in CSS</title>
+      <link>/posts/57/</link>
+      <pubDate>Wed, 24 Oct 2018 21:05:11 +0000</pubDate>
+      
+      <guid>/posts/57/</guid>
+      <description>To make an initial punctuation mark appear hanging (not within the main text block).
+p { hanging-punctuation: first; }  From this nice article: https://betterwebtype.com/rhythm-in-web-typography</description>
+    </item>
+    
+    <item>
+      <title>`toLocaleString` formats numbers according to a given locale</title>
+      <link>/posts/24/</link>
+      <pubDate>Mon, 15 Oct 2018 11:36:00 +0000</pubDate>
+      
+      <guid>/posts/24/</guid>
+      <description>For example, this:
+(3500).toLocaleString()  will return 3,500 if using the US English locale.
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toLocaleString</description>
+    </item>
+    
+    <item>
+      <title>CSS Multi-column Layout allows to dynamically break text into columns</title>
+      <link>/posts/23/</link>
+      <pubDate>Sun, 14 Oct 2018 14:12:18 +0000</pubDate>
+      
+      <guid>/posts/23/</guid>
+      <description>Simple example:
+.two-columns { column-count: 2; }  MDN docs about the CSS Multi-column layout: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Columns
+MDN docs about the CSS multi-column property in particular: https://developer.mozilla.org/en-US/docs/Web/CSS/column-count
+Simple Codepen usage example of the multi-column property: https://codepen.io/jperals/pen/MPEOxZ</description>
+    </item>
+    
+    <item>
+      <title>Coffeescript allows `yes` and `no` or `on` and `off` as aliases for `true` and `false`</title>
+      <link>/posts/22/</link>
+      <pubDate>Wed, 26 Sep 2018 20:59:32 +0000</pubDate>
+      
+      <guid>/posts/22/</guid>
+      <description>Documentation: https://coffeescript.org/#operators
+Discussion (where removing these aliases was proposed and rejected): https://github.com/jashkenas/coffeescript/issues/813</description>
+    </item>
+    
+    <item>
+      <title>It is possible to use colors wen logging to the browser developer console</title>
+      <link>/posts/21/</link>
+      <pubDate>Wed, 26 Sep 2018 09:41:24 +0000</pubDate>
+      
+      <guid>/posts/21/</guid>
+      <description>(At least on Chrome)
+As seen for example on LottieLayer: https://github.com/72/lottie-framer/blob/master/LottieLayer.coffee#L12
+console.log &amp;quot;%c#{name} Successfully Included Locally&amp;quot;, &amp;quot;background: #DDFFE3; color: #007814&amp;quot;  </description>
+    </item>
+    
+    <item>
+      <title>`__dirname` in Node.js returns the directory of the current file</title>
+      <link>/posts/20/</link>
+      <pubDate>Sun, 09 Sep 2018 08:11:00 +0000</pubDate>
+      
+      <guid>/posts/20/</guid>
+      <description>Official documentation: https://nodejs.org/docs/latest/api/modules.html#modules_dirname
+Notes:
+ This is a different thing than process.cwd(), as the current file directory and the current working directory may not be necessarily the same. This works when executing Node.js files but not on the Node.js console. I guess that&amp;rsquo;s because in the latter case the code is not being executed from within a file.   </description>
+    </item>
+    
+    <item>
+      <title>It is possible to use centimeters (`cm`) as unit in CSS</title>
+      <link>/posts/19/</link>
+      <pubDate>Thu, 30 Aug 2018 07:13:15 +0000</pubDate>
+      
+      <guid>/posts/19/</guid>
+      <description>This can be useful when styling for print.</description>
+    </item>
+    
+    <item>
+      <title>Favicons can be PNG files</title>
+      <link>/posts/18/</link>
+      <pubDate>Sat, 25 Aug 2018 22:46:38 +0000</pubDate>
+      
+      <guid>/posts/18/</guid>
+      <description>Apparently all major browsers support using regular PNG files as favicon, so it is possible to happily ditch the .ico file extension and format in favor of &amp;ldquo;pretty normal&amp;rdquo; PNG files.
+Where I read it: https://sympli.io/blog/2017/02/15/heres-everything-you-need-to-know-about-favicons-in-2017/
+More info on Wikipedia: https://en.wikipedia.org/wiki/Favicon</description>
+    </item>
+    
+    <item>
+      <title>Inline elements are not affected by CSS transforms</title>
+      <link>/posts/17/</link>
+      <pubDate>Thu, 09 Aug 2018 21:00:48 +0000</pubDate>
+      
+      <guid>/posts/17/</guid>
+      <description>Another case for inline-block&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>`console.dir` outputs an object&#39;s properties in a way that might be actually more useful than `conso</title>
+      <link>/posts/3/</link>
+      <pubDate>Wed, 01 Aug 2018 20:09:50 +0000</pubDate>
+      
+      <guid>/posts/3/</guid>
+      <description>console.dir outputs an object&amp;rsquo;s properties in a way that might be actually more useful than console.log:
+https://developer.mozilla.org/en-US/docs/Web/API/Console/dir</description>
+    </item>
+    
+    <item>
+      <title>You can pass any number of elements to `console.log`, not just one or two.</title>
+      <link>/posts/2/</link>
+      <pubDate>Wed, 01 Aug 2018 20:08:00 +0000</pubDate>
+      
+      <guid>/posts/2/</guid>
+      <description>You can pass any number of elements to console.log, not just one or two.
+For example (within the app I&amp;rsquo;m writing in CoffeeScript):
+console.log @units_minutes, isLastMinute, seconds  Reference (MDN): https://developer.mozilla.org/en-US/docs/Web/API/Console/log</description>
+    </item>
+    
+    <item>
+      <title>You can import other (S)CSS files from the `node_modules` directory by using `~`.</title>
+      <link>/posts/1/</link>
+      <pubDate>Wed, 01 Aug 2018 20:05:41 +0000</pubDate>
+      
+      <guid>/posts/1/</guid>
+      <description>You can import other (S)CSS files from the node_modules directory by using ~.
+For example:
+@import &amp;quot;~my-module/my-file.scss&amp;quot;;  Where my-module would be a module installed e.g. with npm or yarn.
+Some links where this can be seen:
+ https://github.com/parcel-bundler/parcel/issues/39 https://github.com/gdi2290/angular-starter/issues/727 https://laracasts.com/discuss/channels/elixir/import-a-scss-files-from-node-modules   </description>
+    </item>
+    
+    <item>
+      <title>The JavaScript spread operator doesn&#39;t seem to work in CoffeeScript</title>
+      <link>/posts/9/</link>
+      <pubDate>Wed, 01 Aug 2018 20:02:40 +0000</pubDate>
+      
+      <guid>/posts/9/</guid>
+      <description>Using Gulp with browserSync 2.24.5, coffeeify 3.0.1 and coffescript 2.3.1.
+Documentation about the spread operator: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax</description>
+    </item>
+    
+    <item>
+      <title>`NaN` and `undefined` don&#39;t seem to be allowed in pure JSON, but `null` is.</title>
+      <link>/posts/4/</link>
+      <pubDate>Wed, 01 Aug 2018 20:01:49 +0000</pubDate>
+      
+      <guid>/posts/4/</guid>
+      <description>NaN and undefined don&amp;rsquo;t seem to be allowed in pure JSON, but null is.</description>
+    </item>
+    
+    <item>
+      <title>Illustrator files can be imported into Sketch by changing their extension to `pdf`</title>
+      <link>/posts/10/</link>
+      <pubDate>Wed, 01 Aug 2018 19:59:31 +0000</pubDate>
+      
+      <guid>/posts/10/</guid>
+      <description>By changing an ai file extension to pdf, it is possible to import its content into a Sketch document by dragging the file into it. Not sure if all the information is kept, but at least the vector elements are there.
+Interestingly, if the file extension was not changed, Sketch will just import the ai file as a raster image.</description>
+    </item>
+    
+    <item>
+      <title>Deploying a static site to Heroku</title>
+      <link>/posts/5/</link>
+      <pubDate>Wed, 01 Aug 2018 19:54:33 +0000</pubDate>
+      
+      <guid>/posts/5/</guid>
+      <description>Apparently Heroku is not meant to host static content, but it is possible. One way is to use the PHP buildpack (and probably other buildpacks that include servers like Apache or nginx). This approach requires to set a couple configuration files in place but still it was quite simple —and worked:
+http://dev.edenspiekermann.com/2016/03/29/jekyll-on-heroku/</description>
+    </item>
+    
+    <item>
+      <title>The JavaScript spread operator can be used instead of `Object.assign` to make Redux reducers more readable</title>
+      <link>/posts/8/</link>
+      <pubDate>Wed, 01 Aug 2018 19:54:04 +0000</pubDate>
+      
+      <guid>/posts/8/</guid>
+      <description>https://redux.js.org/recipes/using-object-spread-operator</description>
+    </item>
+    
+    <item>
+      <title>Gatsby is not (just) a Jekyll equivalent</title>
+      <link>/posts/7/</link>
+      <pubDate>Wed, 01 Aug 2018 19:53:06 +0000</pubDate>
+      
+      <guid>/posts/7/</guid>
+      <description>For some reason I thought Gatsby was a sort of static site generator more or less like Jekyll, but it turned out to be something different, more about reading external data sources than static content files —something that, even assuming it could somehow fit my specific needs, it would probably be much more complex to do so.
+It was rather Hugo that I was looking for.</description>
+    </item>
+    
+    <item>
+      <title>Hugo is _really_ fast</title>
+      <link>/posts/6/</link>
+      <pubDate>Wed, 01 Aug 2018 19:52:39 +0000</pubDate>
+      
+      <guid>/posts/6/</guid>
+      <description>Hugo is yet another static site generator, pretty much like Jekyll. I wouldn&amp;rsquo;t say that build speed is the most important feature, but I have to admit that Hugo&amp;rsquo;s is quite impressive. My site is still rather small, but a development build is generated in 19ms and a production build in 116ms. It often leaves me waiting until I realise it has already finished.
+And also beyond the speed question, so far so good with Hugo.</description>
+    </item>
+    
+    <item>
+      <title>It is possible to cherry-pick from another Git repository</title>
+      <link>/posts/16/</link>
+      <pubDate>Wed, 01 Aug 2018 19:50:23 +0000</pubDate>
+      
+      <guid>/posts/16/</guid>
+      <description>Just that the other repository needs to be set as a remote.
+See https://stackoverflow.com/questions/5120038/is-it-possible-to-cherry-pick-a-commit-from-another-git-repository</description>
+    </item>
+    
+    <item>
+      <title>It is possible to set subdomains under localhost</title>
+      <link>/posts/15/</link>
+      <pubDate>Wed, 01 Aug 2018 19:47:23 +0000</pubDate>
+      
+      <guid>/posts/15/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Indentation-based vs fenced code blocks in Markdown</title>
+      <link>/posts/14/</link>
+      <pubDate>Sun, 29 Jul 2018 12:47:35 +0000</pubDate>
+      
+      <guid>/posts/14/</guid>
+      <description>So apparently there are (at least) two ways to add a code block in Markdown: either by indentation (which I find less convenient), or by using the triple-backtick (```) method that I am already used to (Gitlab, Github, Slack, Trello&amp;hellip;),. It seems that using triple tilde (~~~) may also be possible, at least in some implementations.
+Markdown code blocks created with the triple backtick or triple tilde method are called &amp;ldquo;fenced code blocks&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Django&#39;s `pre_save` signal</title>
+      <link>/posts/12/</link>
+      <pubDate>Sat, 28 Jul 2018 22:45:03 +0000</pubDate>
+      
+      <guid>/posts/12/</guid>
+      <description>I found it useful for adding custom created_date and modified_date fields to a model without overriding its save method.
+I&amp;rsquo;d find a method-based syntax nicer, but it&amp;rsquo;s OK.
+This example helped me more than the documentation:
+https://www.codingforentrepreneurs.com/blog/post-save-vs-pre-save-vs-override-save-method/
+Here is how I used it:
+from django.db import models from django.db.models.signals import pre_save from django.utils import timezone class Learning(models.Model): [...] created_date = models.DateTimeField(blank=True) modified_date = models.DateTimeField(editable=False) [...] # The fields created_date and modified_date are automatically created/modified but are still editable.</description>
+    </item>
+    
+    <item>
+      <title>Django-markdown2 doesn&#39;t support fenced code blocks unless explicitly specified</title>
+      <link>/posts/13/</link>
+      <pubDate>Sat, 28 Jul 2018 22:44:53 +0000</pubDate>
+      
+      <guid>/posts/13/</guid>
+      <description>The feature has to be added as an extra feature in the template tag:
+{{ some_text | markdown:&amp;quot;fenced-code-blocks&amp;quot; }}  </description>
+    </item>
+    
+    <item>
+      <title>Django models don&#39;t seem to have built-in date fields</title>
+      <link>/posts/11/</link>
+      <pubDate>Sat, 28 Jul 2018 20:39:56 +0000</pubDate>
+      
+      <guid>/posts/11/</guid>
+      <description>They need to be added explicitly in the models.
+See for example:
+https://stackoverflow.com/questions/3429878/automatic-creation-date-for-django-model-form-objects</description>
+    </item>
+    
+    <item>
       <title></title>
-      <link>/jobs/2009-2009-freelancing/</link>
+      <link>/jobs/2008-2009-freelancing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/jobs/2009-2009-freelancing/</guid>
+      <guid>/jobs/2008-2009-freelancing/</guid>
       <description>My first paid work as a developer was a WordPress-based website for a startup. I took care of both design and development and wrote a custom theme from scratch.</description>
     </item>
     
@@ -50,12 +420,21 @@ The most fun part was the development of complex and visually rich web apps such
     
     <item>
       <title></title>
-      <link>/jobs/2012-ixds/</link>
+      <link>/jobs/2012-2019-ixds/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/jobs/2012-ixds/</guid>
-      <description>At IXDS I have the opportunity to contribute to top emerging design projects by helping make UX concepts tangible.
-One of the most interesting aspects of my work at IXDS is the close relationship between design and engineering —and one of its most challenging aspects is the need to work in quick iterations while allowing for mid-term development at the same time.</description>
+      <guid>/jobs/2012-2019-ixds/</guid>
+      <description>At IXDS I had the opportunity to contribute to top emerging design projects by helping make UX concepts tangible.
+One of the most interesting aspects of my work at IXDS was the close relationship between design and engineering —and one of its most challenging aspects was the need to work in quick iterations while allowing for mid-term development at the same time.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/jobs/2019-nbt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/jobs/2019-nbt/</guid>
+      <description>As a startup incubator, Next Big Thing brings me the chance to get involved in a variety of innovative projects across the whole development cycle —shaping products from the earliest prototyping phases all the way to production.</description>
     </item>
     
     <item>
@@ -76,8 +455,8 @@ This piece was exhibited on a huge screen in the center of Madrid as part of Med
       
       <guid>/projects/colors-of-twitter/</guid>
       <description>Basically by combining Twitter feed data (100 million tweets and counting) with a language detector (together with some geometric post-processing, and lots of hours of coding), I was able to offer a quite detailed look at the language geography of the Twitter universe.
-By generating GeoJSON I can display the data in an interactive map:
- And PNG output can also be useful to easily share highlights about specific regions:</description>
+A PNG image of any region of the world can be generated:
+  Africa: Considering how Twitter users often choose the language with a biggest audience, I am happy about the language diversity that shows up in Africa, especially in the South, the East, and the Gulf of Guinea.</description>
     </item>
     
     <item>

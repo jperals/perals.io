@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JavaScript on Joan Perals — Web Developer, Creative Technologist, Digital Craftsman</title>
+    <link>/tags/javascript/</link>
+    <description>Recent content in JavaScript on Joan Perals — Web Developer, Creative Technologist, Digital Craftsman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 18 Aug 2019 22:12:10 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Importing blog posts from Django to Hugo</title>
+      <link>/posts/68/</link>
+      <pubDate>Sun, 18 Aug 2019 22:12:10 +0000</pubDate>
+      
+      <guid>/posts/68/</guid>
+      <description>Last year I started a sort of basic markdown-based micro-blog just to jot down small software-related learnings. I hosted it on Heroku, which is free but sleeps after 30 minutes of inactivity. That&amp;rsquo;s OK for me as a user, but I would not want potential visitors to have to wait for the instance to wake up. At the same time, not sure it&amp;rsquo;s worth paying for Django hosting just for such a minor project.</description>
+    </item>
+    
+    <item>
+      <title>`Math.max` and `Math.min` accept more than two arguments</title>
+      <link>/posts/65/</link>
+      <pubDate>Wed, 24 Jul 2019 19:49:21 +0000</pubDate>
+      
+      <guid>/posts/65/</guid>
+      <description>For example:
+Math.max(1, 3, 2); // Output: 3  Also this will work:
+const array = [1,3,2]; Math.max(...array); // Output: 3  See the Mozilla docs:
+ Math.max Math.min   </description>
+    </item>
+    
+    <item>
+      <title>In JavaScript, a plus symbol (`&#43;`) in front of a variable casts it to a number</title>
+      <link>/posts/63/</link>
+      <pubDate>Wed, 08 May 2019 09:24:46 +0000</pubDate>
+      
+      <guid>/posts/63/</guid>
+      <description>For example, +&amp;quot;1&amp;quot; returns 1.
+If the value can&amp;rsquo;t be converted to number type, it will return NaN.
+For example , +&amp;quot;a&amp;quot; or +{} return NaN.</description>
+    </item>
+    
+    <item>
+      <title>You can add CSS to console logs</title>
+      <link>/posts/62/</link>
+      <pubDate>Fri, 07 Dec 2018 09:47:54 +0000</pubDate>
+      
+      <guid>/posts/62/</guid>
+      <description>By adding c% at the beginning of the string, and a second string argument with CSS rules.
+Example:
+console.log(&#39;%cmessage&#39;, &#39;color: green;line-height:40px&#39;)  https://coderwall.com/p/fskzdw/colorful-console-log
+Tested on Firefox and Chrome.</description>
+    </item>
+    
+    <item>
+      <title>You can set CSS variables with JavaScript</title>
+      <link>/posts/60/</link>
+      <pubDate>Thu, 15 Nov 2018 17:46:54 +0000</pubDate>
+      
+      <guid>/posts/60/</guid>
+      <description>JavaScript:
+DOMElement.style.setProperty(&#39;--primary-color&#39;, &#39;yellow&#39;)  CSS:
+.my-element { background-color: var(--primary-color); }  An article with more information:
+https://medium.com/@_bengarrison/accessing-and-modifying-css-variables-with-javascript-2ccb735bbff0</description>
+    </item>
+    
+    <item>
+      <title>`toLocaleString` formats numbers according to a given locale</title>
+      <link>/posts/24/</link>
+      <pubDate>Mon, 15 Oct 2018 11:36:00 +0000</pubDate>
+      
+      <guid>/posts/24/</guid>
+      <description>For example, this:
+(3500).toLocaleString()  will return 3,500 if using the US English locale.
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toLocaleString</description>
+    </item>
+    
+  </channel>
+</rss>

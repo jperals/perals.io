@@ -12,10 +12,10 @@
     
     <item>
       <title></title>
-      <link>/jobs/2009-2009-freelancing/</link>
+      <link>/jobs/2008-2009-freelancing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/jobs/2009-2009-freelancing/</guid>
+      <guid>/jobs/2008-2009-freelancing/</guid>
       <description>My first paid work as a developer was a WordPress-based website for a startup. I took care of both design and development and wrote a custom theme from scratch.</description>
     </item>
     
@@ -49,12 +49,21 @@ The most fun part was the development of complex and visually rich web apps such
     
     <item>
       <title></title>
-      <link>/jobs/2012-ixds/</link>
+      <link>/jobs/2012-2019-ixds/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/jobs/2012-ixds/</guid>
-      <description>At IXDS I have the opportunity to contribute to top emerging design projects by helping make UX concepts tangible.
-One of the most interesting aspects of my work at IXDS is the close relationship between design and engineering —and one of its most challenging aspects is the need to work in quick iterations while allowing for mid-term development at the same time.</description>
+      <guid>/jobs/2012-2019-ixds/</guid>
+      <description>At IXDS I had the opportunity to contribute to top emerging design projects by helping make UX concepts tangible.
+One of the most interesting aspects of my work at IXDS was the close relationship between design and engineering —and one of its most challenging aspects was the need to work in quick iterations while allowing for mid-term development at the same time.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/jobs/2019-nbt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/jobs/2019-nbt/</guid>
+      <description>As a startup incubator, Next Big Thing brings me the chance to get involved in a variety of innovative projects across the whole development cycle —shaping products from the earliest prototyping phases all the way to production.</description>
     </item>
     
   </channel>

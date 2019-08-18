@@ -6,9 +6,43 @@
     <description>Recent content in Django on Joan Perals — Web Developer, Creative Technologist, Digital Craftsman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Sun, 18 Aug 2019 22:12:10 +0000</lastBuildDate>
     
 	<atom:link href="/tags/django/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Importing blog posts from Django to Hugo</title>
+      <link>/posts/68/</link>
+      <pubDate>Sun, 18 Aug 2019 22:12:10 +0000</pubDate>
+      
+      <guid>/posts/68/</guid>
+      <description>Last year I started a sort of basic markdown-based micro-blog just to jot down small software-related learnings. I hosted it on Heroku, which is free but sleeps after 30 minutes of inactivity. That&amp;rsquo;s OK for me as a user, but I would not want potential visitors to have to wait for the instance to wake up. At the same time, not sure it&amp;rsquo;s worth paying for Django hosting just for such a minor project.</description>
+    </item>
+    
+    <item>
+      <title>Django&#39;s `pre_save` signal</title>
+      <link>/posts/12/</link>
+      <pubDate>Sat, 28 Jul 2018 22:45:03 +0000</pubDate>
+      
+      <guid>/posts/12/</guid>
+      <description>I found it useful for adding custom created_date and modified_date fields to a model without overriding its save method.
+I&amp;rsquo;d find a method-based syntax nicer, but it&amp;rsquo;s OK.
+This example helped me more than the documentation:
+https://www.codingforentrepreneurs.com/blog/post-save-vs-pre-save-vs-override-save-method/
+Here is how I used it:
+from django.db import models from django.db.models.signals import pre_save from django.utils import timezone class Learning(models.Model): [...] created_date = models.DateTimeField(blank=True) modified_date = models.DateTimeField(editable=False) [...] # The fields created_date and modified_date are automatically created/modified but are still editable.</description>
+    </item>
+    
+    <item>
+      <title>Django-markdown2 doesn&#39;t support fenced code blocks unless explicitly specified</title>
+      <link>/posts/13/</link>
+      <pubDate>Sat, 28 Jul 2018 22:44:53 +0000</pubDate>
+      
+      <guid>/posts/13/</guid>
+      <description>The feature has to be added as an extra feature in the template tag:
+{{ some_text | markdown:&amp;quot;fenced-code-blocks&amp;quot; }}  </description>
+    </item>
     
     <item>
       <title></title>
@@ -22,12 +56,12 @@ The most fun part was the development of complex and visually rich web apps such
     
     <item>
       <title></title>
-      <link>/jobs/2012-ixds/</link>
+      <link>/jobs/2012-2019-ixds/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/jobs/2012-ixds/</guid>
-      <description>At IXDS I have the opportunity to contribute to top emerging design projects by helping make UX concepts tangible.
-One of the most interesting aspects of my work at IXDS is the close relationship between design and engineering —and one of its most challenging aspects is the need to work in quick iterations while allowing for mid-term development at the same time.</description>
+      <guid>/jobs/2012-2019-ixds/</guid>
+      <description>At IXDS I had the opportunity to contribute to top emerging design projects by helping make UX concepts tangible.
+One of the most interesting aspects of my work at IXDS was the close relationship between design and engineering —and one of its most challenging aspects was the need to work in quick iterations while allowing for mid-term development at the same time.</description>
     </item>
     
   </channel>

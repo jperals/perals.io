@@ -24,20 +24,6 @@ The story view allows designers to create a user story for the design idea, as a
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <title>
 
 
@@ -60,19 +46,19 @@ The story view allows designers to create a user story for the design idea, as a
 
 
 
-<link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
+<link rel="stylesheet" as="style" onload="this.onload=null;this.rel='stylesheet'"
       href="https://use.fontawesome.com/releases/v5.2.0/css/solid.css"
       integrity="sha384-wnAC7ln+XN0UKdcPvJvtqIH3jOjs9pnKnq9qX68ImXvOGz2JuFoEiCjT8jyZQX2z" crossorigin="anonymous">
 
-<link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
+<link rel="stylesheet" as="style" onload="this.onload=null;this.rel='stylesheet'"
       href="https://use.fontawesome.com/releases/v5.2.0/css/regular.css"
       integrity="sha384-zkhEzh7td0PG30vxQk1D9liRKeizzot4eqkJ8gB3/I+mZ1rjgQk+BSt2F6rT2c+I" crossorigin="anonymous">
 
-<link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
+<link rel="stylesheet" as="style" onload="this.onload=null;this.rel='stylesheet'"
       href="https://use.fontawesome.com/releases/v5.2.0/css/brands.css"
       integrity="sha384-nT8r1Kzllf71iZl81CdFzObMsaLOhqBU1JD2+XoAALbdtWaXDOlWOZTR4v1ktjPE" crossorigin="anonymous">
 
-<link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
+<link rel="stylesheet" as="style" onload="this.onload=null;this.rel='stylesheet'"
       href="https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css"
       integrity="sha384-HbmWTHay9psM8qyzEKPc8odH4DsOuzdejtnr+OFtDmOcIVnhgReQ4GZBH7uwcjf6" crossorigin="anonymous">
 
@@ -118,7 +104,7 @@ The story view allows designers to create a user story for the design idea, as a
 
 <body lang="">
 
-<div class="wrapper main">
+<main class="wrapper main">
     <section class="main single" id="projects">
         <div class="container main">
             <div class="content">
@@ -129,7 +115,8 @@ The story view allows designers to create a user story for the design idea, as a
     
   </h1>
   
-  <div class="meta year">2019</div>
+  
+  <div class="meta date year">2019</div>
   
 </div>
 
@@ -161,51 +148,66 @@ The story view allows designers to create a user story for the design idea, as a
 </p>
 <p>&nbsp;</p></p>
 
+<p>Demo (without write permissions): <a href="https://try-spex.firebaseapp.com">https://try-spex.firebaseapp.com</a></p>
+
 <p>Code: <a href="https://github.com/jperals/spex">https://github.com/jperals/spex</a></p>
 
                 </div>
             </div>
             <div class="right">
-                <a class="button back-button subtle-button" href="/#projects">
+                <a class="button back-button subtle-button" href="../">
                 Back
                 </a>
             </div>
         </div>
     </section>
-</div>
-<nav class="hidden">
+</main>
+
+<nav class="">
     <div class="container">
         <ul class="section-links">
             <li>
                 <a href="/#" title="Back to the top">
-                  <i class="fas fa-chevron-up"></i>
+                    <i class="fas fa-chevron-up"></i>
                 </a>
             </li>
+            
             <li>
-                <a href="/#technical-skills" class="technical-skills-link">
+                <a href="/#technical-skills" class="">
                     Toolbox
                 </a>
             </li>
+            
             <li>
-                <a href="/#projects">
+                <a href="/#projects" class="">
                     Projects
                 </a>
             </li>
+            
             <li>
-                <a href="/#professional-experience">
+                <a href="/#professional-experience" class="">
                     Professional experience
                 </a>
             </li>
+            
             <li>
-                <a href="/#contact">
+                <a href="/#contact" class="">
                     Contact
                 </a>
             </li>
+            
             <li>
-                <a href="/cv-joanperals-2019.05.03_01.pdf">
+                <a href="/posts/" class="">
+                    Blog
+                </a>
+            </li>
+            
+            <li>
+                <a href="/cv-joanperals-2019.05.03_01.pdf" class="">
                     CV
                 </a>
             </li>
+            
         </ul>
     </div>
 </nav>
@@ -221,7 +223,7 @@ The story view allows designers to create a user story for the design idea, as a
 
 
 
-<script>
+<script type="application/javascript">
 var doNotTrack = false;
 if (!doNotTrack) {
 	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;

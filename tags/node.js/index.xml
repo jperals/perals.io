@@ -6,18 +6,39 @@
     <description>Recent content in Node.js on Joan Perals — Web Developer, Creative Technologist, Digital Craftsman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Sun, 18 Aug 2019 22:12:10 +0000</lastBuildDate>
     
 	<atom:link href="/tags/node.js/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Importing blog posts from Django to Hugo</title>
+      <link>/posts/68/</link>
+      <pubDate>Sun, 18 Aug 2019 22:12:10 +0000</pubDate>
+      
+      <guid>/posts/68/</guid>
+      <description>Last year I started a sort of basic markdown-based micro-blog just to jot down small software-related learnings. I hosted it on Heroku, which is free but sleeps after 30 minutes of inactivity. That&amp;rsquo;s OK for me as a user, but I would not want potential visitors to have to wait for the instance to wake up. At the same time, not sure it&amp;rsquo;s worth paying for Django hosting just for such a minor project.</description>
+    </item>
+    
+    <item>
+      <title>`__dirname` in Node.js returns the directory of the current file</title>
+      <link>/posts/20/</link>
+      <pubDate>Sun, 09 Sep 2018 08:11:00 +0000</pubDate>
+      
+      <guid>/posts/20/</guid>
+      <description>Official documentation: https://nodejs.org/docs/latest/api/modules.html#modules_dirname
+Notes:
+ This is a different thing than process.cwd(), as the current file directory and the current working directory may not be necessarily the same. This works when executing Node.js files but not on the Node.js console. I guess that&amp;rsquo;s because in the latter case the code is not being executed from within a file.   </description>
+    </item>
+    
+    <item>
       <title></title>
-      <link>/jobs/2012-ixds/</link>
+      <link>/jobs/2012-2019-ixds/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/jobs/2012-ixds/</guid>
-      <description>At IXDS I have the opportunity to contribute to top emerging design projects by helping make UX concepts tangible.
-One of the most interesting aspects of my work at IXDS is the close relationship between design and engineering —and one of its most challenging aspects is the need to work in quick iterations while allowing for mid-term development at the same time.</description>
+      <guid>/jobs/2012-2019-ixds/</guid>
+      <description>At IXDS I had the opportunity to contribute to top emerging design projects by helping make UX concepts tangible.
+One of the most interesting aspects of my work at IXDS was the close relationship between design and engineering —and one of its most challenging aspects was the need to work in quick iterations while allowing for mid-term development at the same time.</description>
     </item>
     
     <item>
@@ -27,8 +48,8 @@ One of the most interesting aspects of my work at IXDS is the close relationship
       
       <guid>/projects/colors-of-twitter/</guid>
       <description>Basically by combining Twitter feed data (100 million tweets and counting) with a language detector (together with some geometric post-processing, and lots of hours of coding), I was able to offer a quite detailed look at the language geography of the Twitter universe.
-By generating GeoJSON I can display the data in an interactive map:
- And PNG output can also be useful to easily share highlights about specific regions:</description>
+A PNG image of any region of the world can be generated:
+  Africa: Considering how Twitter users often choose the language with a biggest audience, I am happy about the language diversity that shows up in Africa, especially in the South, the East, and the Gulf of Guinea.</description>
     </item>
     
   </channel>
