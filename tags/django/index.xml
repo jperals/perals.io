@@ -6,7 +6,7 @@
     <description>Recent content in Django on Joan Perals — UX Developer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 18 Aug 2019 22:12:10 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 31 Aug 2019 21:33:59 +0000</lastBuildDate>
     
 	<atom:link href="/tags/django/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,10 +14,10 @@
     <item>
       <title>Importing blog posts from Django to Hugo</title>
       <link>/posts/68/</link>
-      <pubDate>Sun, 18 Aug 2019 22:12:10 +0000</pubDate>
+      <pubDate>Sat, 31 Aug 2019 21:33:59 +0000</pubDate>
       
       <guid>/posts/68/</guid>
-      <description>Last year I started a sort of basic markdown-based micro-blog just to jot down small software-related learnings. I hosted it on Heroku, which is free but sleeps after 30 minutes of inactivity. That&amp;rsquo;s OK for me as a user, but I would not want potential visitors to have to wait for the instance to wake up. At the same time, not sure it&amp;rsquo;s worth paying for Django hosting just for such a minor project.</description>
+      <description>Last year I started a sort of basic Dango-based sort of simple blog just to jot down small software-related learnings in Markdown. I hosted it on Heroku, which is free but sleeps after 30 minutes of inactivity. That&amp;rsquo;s OK for me as a user, but I would not want potential visitors to have to wait for the instance to wake up. At the same time, not sure it&amp;rsquo;s worth paying for Django hosting just for such a minor project.</description>
     </item>
     
     <item>

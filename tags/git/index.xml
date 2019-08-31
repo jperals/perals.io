@@ -6,10 +6,21 @@
     <description>Recent content in Git on Joan Perals — UX Developer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 18 Aug 2019 21:36:15 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 29 Aug 2019 07:47:22 +0000</lastBuildDate>
     
 	<atom:link href="/tags/git/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Push current Git branch with `git push -u origin HEAD`</title>
+      <link>/posts/69/</link>
+      <pubDate>Thu, 29 Aug 2019 07:47:22 +0000</pubDate>
+      
+      <guid>/posts/69/</guid>
+      <description>If you try to do just git push a Git branch that is new and not in the remote yet, you get this message, which suggests that you need some extra arguments:
+fatal: The current branch new-branch has no upstream branch. To push the current branch and set the remote as upstream, use git push --set-upstream origin new-branch  That command can be shortened with -u instead of --set-upstream:
+git push -u origin new-branch  But it&amp;rsquo;s even possible to avoid typing the branch name by replacing it by the HEAD variable (if you are currently on that branch):</description>
+    </item>
     
     <item>
       <title>Stage specific lines with `git add -p`</title>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Joan Perals — Web Developer, Creative Technologist, Digital Artisan on Joan Perals — UX Developer</title>
+    <title>Joan Perals — UX Engineer on Joan Perals — UX Developer</title>
     <link>/</link>
-    <description>Recent content in Joan Perals — Web Developer, Creative Technologist, Digital Artisan on Joan Perals — UX Developer</description>
+    <description>Recent content in Joan Perals — UX Engineer on Joan Perals — UX Developer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 20 Jul 2018 09:40:04 +0200</lastBuildDate>
@@ -14,10 +14,33 @@
     <item>
       <title>Importing blog posts from Django to Hugo</title>
       <link>/posts/68/</link>
-      <pubDate>Sun, 18 Aug 2019 22:12:10 +0000</pubDate>
+      <pubDate>Sat, 31 Aug 2019 21:33:59 +0000</pubDate>
       
       <guid>/posts/68/</guid>
-      <description>Last year I started a sort of basic markdown-based micro-blog just to jot down small software-related learnings. I hosted it on Heroku, which is free but sleeps after 30 minutes of inactivity. That&amp;rsquo;s OK for me as a user, but I would not want potential visitors to have to wait for the instance to wake up. At the same time, not sure it&amp;rsquo;s worth paying for Django hosting just for such a minor project.</description>
+      <description>Last year I started a sort of basic Dango-based sort of simple blog just to jot down small software-related learnings in Markdown. I hosted it on Heroku, which is free but sleeps after 30 minutes of inactivity. That&amp;rsquo;s OK for me as a user, but I would not want potential visitors to have to wait for the instance to wake up. At the same time, not sure it&amp;rsquo;s worth paying for Django hosting just for such a minor project.</description>
+    </item>
+    
+    <item>
+      <title>`getElementsByTagName` is much faster than `querySelectorAll`</title>
+      <link>/posts/70/</link>
+      <pubDate>Sat, 31 Aug 2019 21:31:23 +0000</pubDate>
+      
+      <guid>/posts/70/</guid>
+      <description>According to the section What is a Pattern? of the book Learning JavaScript Design Patterns by Addi Osmani: https://addyosmani.com/resources/essentialjsdesignpatterns/book/#whatisapattern
+So, if selecting by class, this
+const listItems = list.getElementsByTagName(&#39;list-item&#39;);  would be preferable to
+const listItems = list.querySelector(&#39;.list-item&#39;);  </description>
+    </item>
+    
+    <item>
+      <title>Push current Git branch with `git push -u origin HEAD`</title>
+      <link>/posts/69/</link>
+      <pubDate>Thu, 29 Aug 2019 07:47:22 +0000</pubDate>
+      
+      <guid>/posts/69/</guid>
+      <description>If you try to do just git push a Git branch that is new and not in the remote yet, you get this message, which suggests that you need some extra arguments:
+fatal: The current branch new-branch has no upstream branch. To push the current branch and set the remote as upstream, use git push --set-upstream origin new-branch  That command can be shortened with -u instead of --set-upstream:
+git push -u origin new-branch  But it&amp;rsquo;s even possible to avoid typing the branch name by replacing it by the HEAD variable (if you are currently on that branch):</description>
     </item>
     
     <item>
