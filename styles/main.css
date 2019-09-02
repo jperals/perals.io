@@ -62,7 +62,8 @@ main {
   padding-bottom: 2rem; }
 
 .container {
-  margin: auto; }
+  margin: auto;
+  overflow-wrap: break-word; }
 
 section:before {
   content: '';
@@ -841,7 +842,8 @@ main {
   padding-bottom: 2rem; }
 
 .container {
-  margin: auto; }
+  margin: auto;
+  overflow-wrap: break-word; }
 
 section:before {
   content: '';
@@ -1365,7 +1367,7 @@ img {
     font-size: 22px;
     margin-bottom: 38px; }
   .main.single code {
-    border-radius: .25rem;
+    border-radius: .25em;
     padding: .25em;
     background-color: #f0f0f0; }
   .main.single pre code {
@@ -1374,6 +1376,10 @@ img {
     width: 100%;
     box-sizing: border-box;
     overflow-x: scroll; }
+  .main.single h1 code {
+    background-color: transparent;
+    color: #AAA;
+    padding: 0; }
 
 .social-media-list .sm-name {
   color: #AAA; }
