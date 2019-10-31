@@ -12,6 +12,38 @@
     
     
     <item>
+      <title>File naming: kebab-case or camelCase?</title>
+      <link>/posts/file-naming-kebab-case-or-camelcase-gga/</link>
+      <pubDate>Wed, 23 Oct 2019 22:20:11 +0000</pubDate>
+      
+      <guid>/posts/file-naming-kebab-case-or-camelcase-gga/</guid>
+      <description>When it comes to name files and directories, kebab-case should have the following advantages over camelCase:
+ Easier to type: no need to hold one key while typing another More readable: words are more clearly separated No problems for non case-sensitive file systems or configurations  However, camelCase seems to have become the standard for naming files in frontend. Why is that? Maybe because of &amp;ldquo;convention contamination&amp;rdquo; from JavaScript? Does anyone have other, maybe more solid, reasons for that?</description>
+    </item>
+    
+    <item>
+      <title>Why are you using React?</title>
+      <link>/posts/why-are-you-using-react-42g8/</link>
+      <pubDate>Wed, 16 Oct 2019 21:19:09 +0000</pubDate>
+      
+      <guid>/posts/why-are-you-using-react-42g8/</guid>
+      <description>React is the most used library for frontend development these days, and I would like to better understand why that is. So if you use, have used or are planning to use React, I am curious to read from you what were/are the reasons to adopt it, for example:
+ Do you find it better than others, and if so for what reason(s)? Because it is the most used? Others chose it for you?</description>
+    </item>
+    
+    <item>
+      <title>CSS-only low-poly Earth Globe</title>
+      <link>/posts/css-only-low-poly-earth-globe-1idc/</link>
+      <pubDate>Sat, 12 Oct 2019 21:42:15 +0000</pubDate>
+      
+      <guid>/posts/css-only-low-poly-earth-globe-1idc/</guid>
+      <description>CSS-only Earth Globe experiment on CodePen: https://codepen.io/jperals/pen/ExYqwyJ
+(Visit with caution: it&amp;rsquo;s a bit resource hungry)
+Features:
+ CSS 3D transforms CSS animations CSS gradient backgrounds CSS pseudo-selectors (:before, :after, :nth-child) SCSS with trigonometric functions  The hardest part was to stretch the tiles according to the spherical surface (note that they are trapeziums, not rectangles, otherwise they would cross and overlap each other). For this an extra :before pseudo-element was required which gets a slight 3D rotation.</description>
+    </item>
+    
+    <item>
       <title>Importing blog posts from Django to Hugo</title>
       <link>/posts/68/</link>
       <pubDate>Sat, 31 Aug 2019 21:33:59 +0000</pubDate>

@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/posts/file-naming-kebab-case-or-camelcase-gga/</loc>
+    <lastmod>2019-10-23T22:20:11+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/why-are-you-using-react-42g8/</loc>
+    <lastmod>2019-10-16T21:19:09+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/css-only-low-poly-earth-globe-1idc/</loc>
+    <lastmod>2019-10-12T21:42:15+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/django/</loc>
     <lastmod>2019-08-31T21:33:59+00:00</lastmod>
   </url>
