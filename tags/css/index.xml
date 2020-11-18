@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CSS on Joan Perals — UX Developer</title>
@@ -6,11 +6,7 @@
     <description>Recent content in CSS on Joan Perals — UX Developer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 Aug 2019 20:58:55 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/css/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 10 Aug 2019 20:58:55 +0000</lastBuildDate><atom:link href="/tags/css/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Organize CSS rulesets by their declarations&#39; purpose</title>
       <link>/posts/66/</link>
@@ -18,8 +14,8 @@
       
       <guid>/posts/66/</guid>
       <description>In CSS one is tempted to group all possible declarations of one selector together, so as to not repeat the selector. So if we find this:
-.selector-1 { ... } .selector-2 { ... } .selector-1 { ... } .selector-3 { ... }  We would merge the second ruleset with the selector .selector-1 into the first one that uses the same selector:
-.selector-1 { ... } .selector-2 { ... } .</description>
+.selector-1 {...}.selector-2 {...}.selector-1 {...}.selector-3 {...}We would merge the second ruleset with the selector .selector-1 into the first one that uses the same selector:
+.selector-1 {...}.selector-2 {...}.selector-3 {.</description>
     </item>
     
     <item>
@@ -30,7 +26,7 @@
       <guid>/posts/62/</guid>
       <description>By adding c% at the beginning of the string, and a second string argument with CSS rules.
 Example:
-console.log(&#39;%cmessage&#39;, &#39;color: green;line-height:40px&#39;)  https://coderwall.com/p/fskzdw/colorful-console-log
+console.log(&#39;%cmessage&#39;, &#39;color: green;line-height:40px&#39;)https://coderwall.com/p/fskzdw/colorful-console-log
 Tested on Firefox and Chrome.</description>
     </item>
     
@@ -41,8 +37,8 @@ Tested on Firefox and Chrome.</description>
       
       <guid>/posts/60/</guid>
       <description>JavaScript:
-DOMElement.style.setProperty(&#39;--primary-color&#39;, &#39;yellow&#39;)  CSS:
-.my-element { background-color: var(--primary-color); }  An article with more information:
+DOMElement.style.setProperty(&amp;#39;--primary-color&amp;#39;, &amp;#39;yellow&amp;#39;) CSS:
+.my-element { background-color: var(--primary-color); } An article with more information:
 https://medium.com/@_bengarrison/accessing-and-modifying-css-variables-with-javascript-2ccb735bbff0</description>
     </item>
     
@@ -63,7 +59,7 @@ See example: https://jsbin.com/wodevam/edit?css,output</description>
       
       <guid>/posts/57/</guid>
       <description>To make an initial punctuation mark appear hanging (not within the main text block).
-p { hanging-punctuation: first; }  From this nice article: https://betterwebtype.com/rhythm-in-web-typography</description>
+p {hanging-punctuation: first;}From this nice article: https://betterwebtype.com/rhythm-in-web-typography</description>
     </item>
     
     <item>
@@ -73,7 +69,7 @@ p { hanging-punctuation: first; }  From this nice article: https://betterwebtype
       
       <guid>/posts/23/</guid>
       <description>Simple example:
-.two-columns { column-count: 2; }  MDN docs about the CSS Multi-column layout: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Columns
+.two-columns { column-count: 2; } MDN docs about the CSS Multi-column layout: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Columns
 MDN docs about the CSS multi-column property in particular: https://developer.mozilla.org/en-US/docs/Web/CSS/column-count
 Simple Codepen usage example of the multi-column property: https://codepen.io/jperals/pen/MPEOxZ</description>
     </item>
@@ -85,6 +81,16 @@ Simple Codepen usage example of the multi-column property: https://codepen.io/jp
       
       <guid>/jobs/2010-2010-linka/</guid>
       <description> Basically, I took care of the implementation of page layouts according to PSD-based documents for various clients. Also some minor photo editing. </description>
+    </item>
+    
+    <item>
+      <title>ZeroDivs</title>
+      <link>/projects/zerodivs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/zerodivs/</guid>
+      <description>As a web developer I strive to write code that is semantic and concise. And CSS is an often underrated hero that can help you avoid unnecessary scripts and markup. But —just how far can it go?
+A number of people have explored how CSS can be used and abused and came up with many interesting ideas, but it was probably while trying to emulate Lynn Fischer&amp;rsquo;s mind-blowing single div illustrations and realizing how hard it actually is to code CSS illustrations by hand, that I felt the need to, well, maybe, make a visual editor?</description>
     </item>
     
   </channel>

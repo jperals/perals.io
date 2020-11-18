@@ -1,15 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Processing on Joan Perals — UX Developer</title>
     <link>/tags/processing/</link>
     <description>Recent content in Processing on Joan Perals — UX Developer</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="/tags/processing/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="/tags/processing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Big Bother</title>
       <link>/projects/big-bother/</link>
@@ -18,7 +14,7 @@
       <guid>/projects/big-bother/</guid>
       <description>Big Bother (sic) is a generative sketch that features an eye on a large screen. This eye has the ability to mutate a little when it detects movement around: a new pupil appears to follow every “target”, with the aim to follow each watcher individually.
 This piece was exhibited on a huge screen in the center of Madrid as part of MediaLab Prado’s #ProgramaLaPlaza contest in 2014.
- You can check and tweak the code here, and see other submitted projects here.</description>
+ You can check and tweak the code here, and see other submitted projects [here](a href=&amp;ldquo;http://programalaplaza.</description>
     </item>
     
     <item>

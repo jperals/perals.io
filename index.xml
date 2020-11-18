@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Joan Perals — UX Engineer on Joan Perals — UX Developer</title>
@@ -6,10 +6,64 @@
     <description>Recent content in Joan Perals — UX Engineer on Joan Perals — UX Developer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Jul 2018 09:40:04 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 20 Jul 2018 09:40:04 +0200</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Importing blog posts from Django to Hugo</title>
+      <link>/posts/68/</link>
+      <pubDate>Wed, 18 Nov 2020 22:29:14 +0000</pubDate>
+      
+      <guid>/posts/68/</guid>
+      <description>Last year I started a sort of basic Dango-based sort of simple blog just to jot down small software-related learnings in Markdown. I hosted it on Heroku, which is free but sleeps after 30 minutes of inactivity. That&amp;rsquo;s OK for me as a user, but I would not want potential visitors to have to wait for the instance to wake up. At the same time, not sure it&amp;rsquo;s worth paying for Django hosting just for such a minor project.</description>
+    </item>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Functions can be overriden by declaring them more than once in JavaScript</title>
+      <link>/posts/75/</link>
+      <pubDate>Sat, 18 Jan 2020 14:19:47 +0000</pubDate>
+      
+      <guid>/posts/75/</guid>
+      <description>Example:
+function f() { return 1 } function f() { return 2 } f() // Result: 2 Declaring functions by declaring const instead prevents this by raising an error:
+const f = () =&amp;gt; 1 const f = () =&amp;gt; 2 // Uncaught SyntaxError: Identifier &amp;#39;f&amp;#39; has already been declared or
+const f = () =&amp;gt; 1 function f() { return 2 } // Uncaught SyntaxError: Identifier &amp;#39;f&amp;#39; has already been declared From discussion on StackOverflow: https://stackoverflow.</description>
+    </item>
     
+    <item>
+      <title>JavaScript&#39;s `Array.prototype.sort` sorts numbers as if they were strings</title>
+      <link>/posts/74/</link>
+      <pubDate>Sat, 30 Nov 2019 17:36:58 +0000</pubDate>
+      
+      <guid>/posts/74/</guid>
+      <description>This:
+[1, 2, 3, 10].sort() outputs this:
+[1, 10, 2, 3] because apparently, elements are converted to strings before comparing them.
+To compare numbers correctly, we can use a compare function:
+[1, 2, 3, 10].sort((a, b) =&amp;gt; a - b) which will output what we would expect:
+[1, 2, 3, 10] A more detailed article here: https://www.sitepoint.com/sort-an-array-of-objects-in-javascript/</description>
+    </item>
+    
+    <item>
+      <title>`getElementsByTagName` is much faster than `querySelectorAll`</title>
+      <link>/posts/70/</link>
+      <pubDate>Sun, 24 Nov 2019 17:19:49 +0000</pubDate>
+      
+      <guid>/posts/70/</guid>
+      <description>According to the section What is a Pattern? of the book Learning JavaScript Design Patterns by Addi Osmani: https://addyosmani.com/resources/essentialjsdesignpatterns/book/#whatisapattern
+So, if selecting by class, this
+const listItems = list.getElementsByTagName(&#39;list-item&#39;);would be preferable to
+const listItems = list.querySelectorAll(&amp;#39;.list-item&amp;#39;); </description>
+    </item>
+    
+    <item>
+      <title>Return a resolved promise with `Promise.resolve`</title>
+      <link>/posts/73/</link>
+      <pubDate>Sun, 24 Nov 2019 17:15:27 +0000</pubDate>
+      
+      <guid>/posts/73/</guid>
+      <description>When I wanted to return a promise which is already resolved, I used to do this:
+return new Promise(resolve =&amp;gt; resolve(value)) But it can be done in a simpler way like this:
+return Promise.resolve(value) More about Promise.resolve: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/resolve</description>
+    </item>
     
     <item>
       <title>File naming: kebab-case or camelCase?</title>
@@ -44,35 +98,14 @@ Features:
     </item>
     
     <item>
-      <title>Importing blog posts from Django to Hugo</title>
-      <link>/posts/68/</link>
-      <pubDate>Sat, 31 Aug 2019 21:33:59 +0000</pubDate>
-      
-      <guid>/posts/68/</guid>
-      <description>Last year I started a sort of basic Dango-based sort of simple blog just to jot down small software-related learnings in Markdown. I hosted it on Heroku, which is free but sleeps after 30 minutes of inactivity. That&amp;rsquo;s OK for me as a user, but I would not want potential visitors to have to wait for the instance to wake up. At the same time, not sure it&amp;rsquo;s worth paying for Django hosting just for such a minor project.</description>
-    </item>
-    
-    <item>
-      <title>`getElementsByTagName` is much faster than `querySelectorAll`</title>
-      <link>/posts/70/</link>
-      <pubDate>Sat, 31 Aug 2019 21:31:23 +0000</pubDate>
-      
-      <guid>/posts/70/</guid>
-      <description>According to the section What is a Pattern? of the book Learning JavaScript Design Patterns by Addi Osmani: https://addyosmani.com/resources/essentialjsdesignpatterns/book/#whatisapattern
-So, if selecting by class, this
-const listItems = list.getElementsByTagName(&#39;list-item&#39;);  would be preferable to
-const listItems = list.querySelector(&#39;.list-item&#39;);  </description>
-    </item>
-    
-    <item>
       <title>Push current Git branch with `git push -u origin HEAD`</title>
       <link>/posts/69/</link>
       <pubDate>Thu, 29 Aug 2019 07:47:22 +0000</pubDate>
       
       <guid>/posts/69/</guid>
       <description>If you try to do just git push a Git branch that is new and not in the remote yet, you get this message, which suggests that you need some extra arguments:
-fatal: The current branch new-branch has no upstream branch. To push the current branch and set the remote as upstream, use git push --set-upstream origin new-branch  That command can be shortened with -u instead of --set-upstream:
-git push -u origin new-branch  But it&amp;rsquo;s even possible to avoid typing the branch name by replacing it by the HEAD variable (if you are currently on that branch):</description>
+fatal: The current branch new-branch has no upstream branch.To push the current branch and set the remote as upstream, usegit push --set-upstream origin new-branchThat command can be shortened with -u instead of --set-upstream:
+git push -u origin new-branchBut it&amp;rsquo;s even possible to avoid typing the branch name by replacing it by the HEAD variable (if you are currently on that branch):</description>
     </item>
     
     <item>
@@ -82,7 +115,7 @@ git push -u origin new-branch  But it&amp;rsquo;s even possible to avoid typing 
       
       <guid>/posts/67/</guid>
       <description>For example:
-git add -p my-file.js  will start an interactive prompt that will show every hunk (block of changed lines) in the file and ask if you want to stage it or not (among other options).
+git add -p my-file.jswill start an interactive prompt that will show every hunk (block of changed lines) in the file and ask if you want to stage it or not (among other options).
 https://stackoverflow.com/questions/4309156/commit-specific-lines-of-a-file-to-git</description>
     </item>
     
@@ -93,8 +126,8 @@ https://stackoverflow.com/questions/4309156/commit-specific-lines-of-a-file-to-g
       
       <guid>/posts/66/</guid>
       <description>In CSS one is tempted to group all possible declarations of one selector together, so as to not repeat the selector. So if we find this:
-.selector-1 { ... } .selector-2 { ... } .selector-1 { ... } .selector-3 { ... }  We would merge the second ruleset with the selector .selector-1 into the first one that uses the same selector:
-.selector-1 { ... } .selector-2 { ... } .</description>
+.selector-1 {...}.selector-2 {...}.selector-1 {...}.selector-3 {...}We would merge the second ruleset with the selector .selector-1 into the first one that uses the same selector:
+.selector-1 {...}.selector-2 {...}.selector-3 {.</description>
     </item>
     
     <item>
@@ -104,9 +137,9 @@ https://stackoverflow.com/questions/4309156/commit-specific-lines-of-a-file-to-g
       
       <guid>/posts/65/</guid>
       <description>For example:
-Math.max(1, 3, 2); // Output: 3  Also this will work:
-const array = [1,3,2]; Math.max(...array); // Output: 3  See the Mozilla docs:
- Math.max Math.min   </description>
+Math.max(1, 3, 2);// Output: 3Also this will work:
+const array = [1,3,2];Math.max(...array);// Output: 3See the Mozilla docs:
+ Math.max Math.min  </description>
     </item>
     
     <item>
@@ -137,7 +170,7 @@ For example , +&amp;quot;a&amp;quot; or +{} return NaN.</description>
       <guid>/posts/62/</guid>
       <description>By adding c% at the beginning of the string, and a second string argument with CSS rules.
 Example:
-console.log(&#39;%cmessage&#39;, &#39;color: green;line-height:40px&#39;)  https://coderwall.com/p/fskzdw/colorful-console-log
+console.log(&#39;%cmessage&#39;, &#39;color: green;line-height:40px&#39;)https://coderwall.com/p/fskzdw/colorful-console-log
 Tested on Firefox and Chrome.</description>
     </item>
     
@@ -148,10 +181,10 @@ Tested on Firefox and Chrome.</description>
       
       <guid>/posts/61/</guid>
       <description>For example, instead of just:
-node .  You can do:
-time node .  to get some basic extra execution time numbers without the need of extra performance calculations from your app&amp;rsquo;s side.
+node .You can do:
+time node .to get some basic extra execution time numbers without the need of extra performance calculations from your app&amp;rsquo;s side.
 On Mac OS, the output looks like this:
-real 0m1.562s user 0m1.544s sys 0m0.167s  But it can vary among operative systems. More information for example on Wikipedia: https://en.wikipedia.org/wiki/Time_(Unix)</description>
+real 0m1.562suser 0m1.544ssys 0m0.167sBut it can vary among operative systems. More information for example on Wikipedia: https://en.wikipedia.org/wiki/Time_(Unix)</description>
     </item>
     
     <item>
@@ -161,8 +194,8 @@ real 0m1.562s user 0m1.544s sys 0m0.167s  But it can vary among operative system
       
       <guid>/posts/60/</guid>
       <description>JavaScript:
-DOMElement.style.setProperty(&#39;--primary-color&#39;, &#39;yellow&#39;)  CSS:
-.my-element { background-color: var(--primary-color); }  An article with more information:
+DOMElement.style.setProperty(&amp;#39;--primary-color&amp;#39;, &amp;#39;yellow&amp;#39;) CSS:
+.my-element { background-color: var(--primary-color); } An article with more information:
 https://medium.com/@_bengarrison/accessing-and-modifying-css-variables-with-javascript-2ccb735bbff0</description>
     </item>
     
@@ -183,7 +216,7 @@ See example: https://jsbin.com/wodevam/edit?css,output</description>
       
       <guid>/posts/57/</guid>
       <description>To make an initial punctuation mark appear hanging (not within the main text block).
-p { hanging-punctuation: first; }  From this nice article: https://betterwebtype.com/rhythm-in-web-typography</description>
+p {hanging-punctuation: first;}From this nice article: https://betterwebtype.com/rhythm-in-web-typography</description>
     </item>
     
     <item>
@@ -193,7 +226,7 @@ p { hanging-punctuation: first; }  From this nice article: https://betterwebtype
       
       <guid>/posts/24/</guid>
       <description>For example, this:
-(3500).toLocaleString()  will return 3,500 if using the US English locale.
+(3500).toLocaleString()will return 3,500 if using the US English locale.
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toLocaleString</description>
     </item>
     
@@ -204,7 +237,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
       
       <guid>/posts/23/</guid>
       <description>Simple example:
-.two-columns { column-count: 2; }  MDN docs about the CSS Multi-column layout: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Columns
+.two-columns { column-count: 2; } MDN docs about the CSS Multi-column layout: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Columns
 MDN docs about the CSS multi-column property in particular: https://developer.mozilla.org/en-US/docs/Web/CSS/column-count
 Simple Codepen usage example of the multi-column property: https://codepen.io/jperals/pen/MPEOxZ</description>
     </item>
@@ -227,7 +260,7 @@ Discussion (where removing these aliases was proposed and rejected): https://git
       <guid>/posts/21/</guid>
       <description>(At least on Chrome)
 As seen for example on LottieLayer: https://github.com/72/lottie-framer/blob/master/LottieLayer.coffee#L12
-console.log &amp;quot;%c#{name} Successfully Included Locally&amp;quot;, &amp;quot;background: #DDFFE3; color: #007814&amp;quot;  </description>
+console.log &amp;#34;%c#{name}Successfully Included Locally&amp;#34;, &amp;#34;background: #DDFFE3; color: #007814&amp;#34; </description>
     </item>
     
     <item>
@@ -238,7 +271,7 @@ console.log &amp;quot;%c#{name} Successfully Included Locally&amp;quot;, &amp;qu
       <guid>/posts/20/</guid>
       <description>Official documentation: https://nodejs.org/docs/latest/api/modules.html#modules_dirname
 Notes:
- This is a different thing than process.cwd(), as the current file directory and the current working directory may not be necessarily the same. This works when executing Node.js files but not on the Node.js console. I guess that&amp;rsquo;s because in the latter case the code is not being executed from within a file.   </description>
+ This is a different thing than process.cwd(), as the current file directory and the current working directory may not be necessarily the same. This works when executing Node.js files but not on the Node.js console. I guess that&amp;rsquo;s because in the latter case the code is not being executed from within a file.  </description>
     </item>
     
     <item>
@@ -288,7 +321,7 @@ https://developer.mozilla.org/en-US/docs/Web/API/Console/dir</description>
       <guid>/posts/2/</guid>
       <description>You can pass any number of elements to console.log, not just one or two.
 For example (within the app I&amp;rsquo;m writing in CoffeeScript):
-console.log @units_minutes, isLastMinute, seconds  Reference (MDN): https://developer.mozilla.org/en-US/docs/Web/API/Console/log</description>
+console.log @units_minutes, isLastMinute, secondsReference (MDN): https://developer.mozilla.org/en-US/docs/Web/API/Console/log</description>
     </item>
     
     <item>
@@ -299,9 +332,9 @@ console.log @units_minutes, isLastMinute, seconds  Reference (MDN): https://deve
       <guid>/posts/1/</guid>
       <description>You can import other (S)CSS files from the node_modules directory by using ~.
 For example:
-@import &amp;quot;~my-module/my-file.scss&amp;quot;;  Where my-module would be a module installed e.g. with npm or yarn.
+@import &amp;quot;~my-module/my-file.scss&amp;quot;;Where my-module would be a module installed e.g. with npm or yarn.
 Some links where this can be seen:
- https://github.com/parcel-bundler/parcel/issues/39 https://github.com/gdi2290/angular-starter/issues/727 https://laracasts.com/discuss/channels/elixir/import-a-scss-files-from-node-modules   </description>
+ https://github.com/parcel-bundler/parcel/issues/39 https://github.com/gdi2290/angular-starter/issues/727 https://laracasts.com/discuss/channels/elixir/import-a-scss-files-from-node-modules  </description>
     </item>
     
     <item>
@@ -412,7 +445,7 @@ I&amp;rsquo;d find a method-based syntax nicer, but it&amp;rsquo;s OK.
 This example helped me more than the documentation:
 https://www.codingforentrepreneurs.com/blog/post-save-vs-pre-save-vs-override-save-method/
 Here is how I used it:
-from django.db import models from django.db.models.signals import pre_save from django.utils import timezone class Learning(models.Model): [...] created_date = models.DateTimeField(blank=True) modified_date = models.DateTimeField(editable=False) [...] # The fields created_date and modified_date are automatically created/modified but are still editable.</description>
+from django.db import modelsfrom django.db.models.signals import pre_savefrom django.utils import timezoneclass Learning(models.Model):[...]created_date = models.DateTimeField(blank=True)modified_date = models.DateTimeField(editable=False)[...]# The fields created_date and modified_date are automatically created/modified but are still editable.</description>
     </item>
     
     <item>
@@ -422,7 +455,7 @@ from django.db import models from django.db.models.signals import pre_save from 
       
       <guid>/posts/13/</guid>
       <description>The feature has to be added as an extra feature in the template tag:
-{{ some_text | markdown:&amp;quot;fenced-code-blocks&amp;quot; }}  </description>
+{{ some_text | markdown:&amp;quot;fenced-code-blocks&amp;quot; }}</description>
     </item>
     
     <item>
@@ -499,7 +532,7 @@ The most fun part was the development of complex and visually rich web apps such
       <guid>/projects/big-bother/</guid>
       <description>Big Bother (sic) is a generative sketch that features an eye on a large screen. This eye has the ability to mutate a little when it detects movement around: a new pupil appears to follow every “target”, with the aim to follow each watcher individually.
 This piece was exhibited on a huge screen in the center of Madrid as part of MediaLab Prado’s #ProgramaLaPlaza contest in 2014.
- You can check and tweak the code here, and see other submitted projects here.</description>
+ You can check and tweak the code here, and see other submitted projects [here](a href=&amp;ldquo;http://programalaplaza.</description>
     </item>
     
     <item>
@@ -540,9 +573,9 @@ We have a set of points randomly distributed on a 2D plane. Just by combining a 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/projects/spex/</guid>
-      <description>Spex is a tool to help interdisciplinary teams be aligned on design ideas. As part of a research project at IXDS, we developed a functional MVP of Spex in 12 work days. &amp;nbsp;
- 
-The story view allows designers to create a user story for the design idea, as a sort of slide presentation. &amp;nbsp;
+      <description>Spex is a tool to help interdisciplinary teams be aligned on design ideas. As part of a research project at IXDS, we developed a functional MVP of Spex in 12 work days.
+&amp;nbsp;
+  The story view allows designers to create a user story for the design idea, as a sort of slide presentation. &amp;nbsp;
   At the same time, a more technical team member can use the system view to describe the components involved in the system and the relationships between them.</description>
     </item>
     
@@ -553,9 +586,17 @@ The story view allows designers to create a user story for the design idea, as a
       
       <guid>/projects/terra-cognita/</guid>
       <description>As I moved to Berlin in 2012, I started tracking my movements and then wrote an OpenFrameworks app that let me visualize my process of getting to know a new place.
-&amp;nbsp;
- &amp;nbsp;
-My walkabouts were rendered at high speed mapping the speed to colours, so one can even tell where and when I had been commuting with the train (red), walking (green), taking a tram (purple) or even riding a bike (blue).</description>
+   My walkabouts were rendered at high speed mapping the speed to colours, so one can even tell where and when I had been commuting with the train (red), walking (green), taking a tram (purple) or even riding a bike (blue).</description>
+    </item>
+    
+    <item>
+      <title>ZeroDivs</title>
+      <link>/projects/zerodivs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/zerodivs/</guid>
+      <description>As a web developer I strive to write code that is semantic and concise. And CSS is an often underrated hero that can help you avoid unnecessary scripts and markup. But —just how far can it go?
+A number of people have explored how CSS can be used and abused and came up with many interesting ideas, but it was probably while trying to emulate Lynn Fischer&amp;rsquo;s mind-blowing single div illustrations and realizing how hard it actually is to code CSS illustrations by hand, that I felt the need to, well, maybe, make a visual editor?</description>
     </item>
     
   </channel>

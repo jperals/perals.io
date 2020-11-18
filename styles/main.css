@@ -129,7 +129,7 @@ section > .graph {
 
 .tags .technologies-stats {
   text-align: right; }
-  .tags .technologies-stats .tag, .tags .technologies-stats .experience-time,
+  .tags .technologies-stats .tag,
   .tags .technologies-stats .experience-time {
     color: #00488f !important; }
   .tags .technologies-stats .tag, .tags .technologies-stats .experience-time {
@@ -178,14 +178,14 @@ a.button.subtle-button:link {
     background-color: #cce3f9;
     color: #00488f; }
   .subtle-button.back-button,
-  .subtle-button:link.back-button,
+  .subtle-button.back-button:link,
   a.button.subtle-button.back-button,
-  a.button.subtle-button:link.back-button {
+  a.button.subtle-button.back-button:link {
     padding: .3em .6em .3em 0; }
   .subtle-button.back-button:before,
-  .subtle-button:link.back-button:before,
+  .subtle-button.back-button:link:before,
   a.button.subtle-button.back-button:before,
-  a.button.subtle-button:link.back-button:before {
+  a.button.subtle-button.back-button:link:before {
     content: '〈 '; }
   .subtle-button:not(.back-button):after,
   .subtle-button:link:not(.back-button):after,
@@ -218,14 +218,14 @@ a.button.subtle-button:link {
     background-color: #cce3f9;
     color: #00488f; }
   .subtle-button.back-button,
-  .subtle-button:link.back-button,
+  .subtle-button.back-button:link,
   a.button.subtle-button.back-button,
-  a.button.subtle-button:link.back-button {
+  a.button.subtle-button.back-button:link {
     padding: .3em .6em .3em 0; }
   .subtle-button.back-button:before,
-  .subtle-button:link.back-button:before,
+  .subtle-button.back-button:link:before,
   a.button.subtle-button.back-button:before,
-  a.button.subtle-button:link.back-button:before {
+  a.button.subtle-button.back-button:link:before {
     content: '〈 '; }
   .subtle-button:not(.back-button):after,
   .subtle-button:link:not(.back-button):after,
@@ -261,31 +261,15 @@ a:hover,
   border-bottom-color: dodgerblue; }
 
 a,
-.like-link, a:hover,
-.like-link:hover,
-a:link,
-.like-link:link,
-a:visited,
-.like-link:visited {
+.like-link {
   text-decoration: none; }
 
 a,
-.like-link, a:hover,
-.like-link:hover,
-a:link,
-.like-link:link,
-a:visited,
-.like-link:visited {
+.like-link {
   border-bottom-width: 1px;
   border-bottom-style: dashed; }
   a:hover,
-  .like-link:hover,
-  a:hover:hover,
-  .like-link:hover:hover,
-  a:link:hover,
-  .like-link:link:hover,
-  a:visited:hover,
-  .like-link:visited:hover {
+  .like-link:hover {
     border-bottom-style: solid; }
 
 .call-to-action {
@@ -380,7 +364,7 @@ p {
 .col-xs-offset-2, .enrollments li .course-details .course-duration {
   margin-left: 16.66666667%; }
 
-.col-xs-3, .enrollments li .course-details .course-duration, .social-media-list .sm-name {
+.col-xs-3, .social-media-list .sm-name, .enrollments li .course-details .course-duration {
   width: 25%; }
 
 .col-xs-offset-3 {
@@ -588,14 +572,14 @@ a.button.subtle-button:link {
     background-color: #cce3f9;
     color: #00488f; }
   .subtle-button.back-button,
-  .subtle-button:link.back-button,
+  .subtle-button.back-button:link,
   a.button.subtle-button.back-button,
-  a.button.subtle-button:link.back-button {
+  a.button.subtle-button.back-button:link {
     padding: .3em .6em .3em 0; }
   .subtle-button.back-button:before,
-  .subtle-button:link.back-button:before,
+  .subtle-button.back-button:link:before,
   a.button.subtle-button.back-button:before,
-  a.button.subtle-button:link.back-button:before {
+  a.button.subtle-button.back-button:link:before {
     content: '〈 '; }
   .subtle-button:not(.back-button):after,
   .subtle-button:link:not(.back-button):after,
@@ -960,9 +944,7 @@ body.with-lightbox {
   overflow: hidden; }
   body.with-lightbox > .main {
     overflow-y: scroll; }
-  body.with-lightbox > .footer,
-  body.with-lightbox > .main,
-  body.with-lightbox > nav {
+  body.with-lightbox > .footer, body.with-lightbox > .main, body.with-lightbox > nav {
     filter: blur(5px); }
 
 @media (min-width: 680px) {
@@ -1000,31 +982,15 @@ a:hover,
   border-bottom-color: dodgerblue; }
 
 a,
-.like-link, a:hover,
-.like-link:hover,
-a:link,
-.like-link:link,
-a:visited,
-.like-link:visited {
+.like-link {
   text-decoration: none; }
 
 a,
-.like-link, a:hover,
-.like-link:hover,
-a:link,
-.like-link:link,
-a:visited,
-.like-link:visited {
+.like-link {
   border-bottom-width: 1px;
   border-bottom-style: dashed; }
   a:hover,
-  .like-link:hover,
-  a:hover:hover,
-  .like-link:hover:hover,
-  a:link:hover,
-  .like-link:link:hover,
-  a:visited:hover,
-  .like-link:visited:hover {
+  .like-link:hover {
     border-bottom-style: solid; }
 
 .content li {
@@ -1076,16 +1042,16 @@ nav {
     color: #cccccc; }
     nav li a:hover, nav li a.active,
     nav li a:hover:hover,
-    nav li a:hover.active,
+    nav li a.active:hover,
     nav li a:link:hover,
-    nav li a:link.active,
+    nav li a.active:link,
     nav li a:visited:hover,
-    nav li a:visited.active {
+    nav li a.active:visited {
       color: #666666; }
     nav li a.active,
-    nav li a:hover.active,
-    nav li a:link.active,
-    nav li a:visited.active {
+    nav li a.active:hover,
+    nav li a.active:link,
+    nav li a.active:visited {
       border-bottom-color: dodgerblue; }
 
 nav {
@@ -1204,9 +1170,9 @@ nav a:hover {
     border-style: solid;
     border-color: transparent; }
     nav li a.active,
-    nav li a:hover.active,
-    nav li a:link.active,
-    nav li a:visited.active {
+    nav li a.active:hover,
+    nav li a.active:link,
+    nav li a.active:visited {
       border-left-color: dodgerblue; }
   nav .section-links li.separator {
     height: 0;
@@ -1214,9 +1180,9 @@ nav a:hover {
 
 @media (min-width: 480px) {
   nav li a.active,
-  nav li a:hover.active,
-  nav li a:link.active,
-  nav li a:visited.active {
+  nav li a.active:hover,
+  nav li a.active:link,
+  nav li a.active:visited {
     border-bottom-width: 3px;
     border-bottom-style: solid;
     margin-bottom: -1px;
@@ -1426,7 +1392,7 @@ img {
 .col-xs-offset-2, .enrollments li .course-details .course-duration {
   margin-left: 16.66666667%; }
 
-.col-xs-3, .enrollments li .course-details .course-duration, .social-media-list .sm-name {
+.col-xs-3, .social-media-list .sm-name, .enrollments li .course-details .course-duration {
   width: 25%; }
 
 .col-xs-offset-3 {
@@ -1578,7 +1544,12 @@ img {
   font-size: 14px;
   padding: .3em .6em .35em .6em; }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 100; }
 
 h1 {

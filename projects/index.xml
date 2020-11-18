@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Joan Perals — UX Developer</title>
@@ -6,11 +6,7 @@
     <description>Recent content in Projects on Joan Perals — UX Developer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 18 Aug 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/projects/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 18 Aug 2019 00:00:00 +0000</lastBuildDate><atom:link href="/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Big Bother</title>
       <link>/projects/big-bother/</link>
@@ -19,7 +15,7 @@
       <guid>/projects/big-bother/</guid>
       <description>Big Bother (sic) is a generative sketch that features an eye on a large screen. This eye has the ability to mutate a little when it detects movement around: a new pupil appears to follow every “target”, with the aim to follow each watcher individually.
 This piece was exhibited on a huge screen in the center of Madrid as part of MediaLab Prado’s #ProgramaLaPlaza contest in 2014.
- You can check and tweak the code here, and see other submitted projects here.</description>
+ You can check and tweak the code here, and see other submitted projects [here](a href=&amp;ldquo;http://programalaplaza.</description>
     </item>
     
     <item>
@@ -60,9 +56,9 @@ We have a set of points randomly distributed on a 2D plane. Just by combining a 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/projects/spex/</guid>
-      <description>Spex is a tool to help interdisciplinary teams be aligned on design ideas. As part of a research project at IXDS, we developed a functional MVP of Spex in 12 work days. &amp;nbsp;
- 
-The story view allows designers to create a user story for the design idea, as a sort of slide presentation. &amp;nbsp;
+      <description>Spex is a tool to help interdisciplinary teams be aligned on design ideas. As part of a research project at IXDS, we developed a functional MVP of Spex in 12 work days.
+&amp;nbsp;
+  The story view allows designers to create a user story for the design idea, as a sort of slide presentation. &amp;nbsp;
   At the same time, a more technical team member can use the system view to describe the components involved in the system and the relationships between them.</description>
     </item>
     
@@ -73,9 +69,17 @@ The story view allows designers to create a user story for the design idea, as a
       
       <guid>/projects/terra-cognita/</guid>
       <description>As I moved to Berlin in 2012, I started tracking my movements and then wrote an OpenFrameworks app that let me visualize my process of getting to know a new place.
-&amp;nbsp;
- &amp;nbsp;
-My walkabouts were rendered at high speed mapping the speed to colours, so one can even tell where and when I had been commuting with the train (red), walking (green), taking a tram (purple) or even riding a bike (blue).</description>
+   My walkabouts were rendered at high speed mapping the speed to colours, so one can even tell where and when I had been commuting with the train (red), walking (green), taking a tram (purple) or even riding a bike (blue).</description>
+    </item>
+    
+    <item>
+      <title>ZeroDivs</title>
+      <link>/projects/zerodivs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/zerodivs/</guid>
+      <description>As a web developer I strive to write code that is semantic and concise. And CSS is an often underrated hero that can help you avoid unnecessary scripts and markup. But —just how far can it go?
+A number of people have explored how CSS can be used and abused and came up with many interesting ideas, but it was probably while trying to emulate Lynn Fischer&amp;rsquo;s mind-blowing single div illustrations and realizing how hard it actually is to code CSS illustrations by hand, that I felt the need to, well, maybe, make a visual editor?</description>
     </item>
     
   </channel>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Node.js on Joan Perals — UX Developer</title>
@@ -6,15 +6,11 @@
     <description>Recent content in Node.js on Joan Perals — UX Developer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 31 Aug 2019 21:33:59 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/node.js/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 18 Nov 2020 22:29:14 +0000</lastBuildDate><atom:link href="/tags/node.js/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Importing blog posts from Django to Hugo</title>
       <link>/posts/68/</link>
-      <pubDate>Sat, 31 Aug 2019 21:33:59 +0000</pubDate>
+      <pubDate>Wed, 18 Nov 2020 22:29:14 +0000</pubDate>
       
       <guid>/posts/68/</guid>
       <description>Last year I started a sort of basic Dango-based sort of simple blog just to jot down small software-related learnings in Markdown. I hosted it on Heroku, which is free but sleeps after 30 minutes of inactivity. That&amp;rsquo;s OK for me as a user, but I would not want potential visitors to have to wait for the instance to wake up. At the same time, not sure it&amp;rsquo;s worth paying for Django hosting just for such a minor project.</description>
@@ -28,7 +24,7 @@
       <guid>/posts/20/</guid>
       <description>Official documentation: https://nodejs.org/docs/latest/api/modules.html#modules_dirname
 Notes:
- This is a different thing than process.cwd(), as the current file directory and the current working directory may not be necessarily the same. This works when executing Node.js files but not on the Node.js console. I guess that&amp;rsquo;s because in the latter case the code is not being executed from within a file.   </description>
+ This is a different thing than process.cwd(), as the current file directory and the current working directory may not be necessarily the same. This works when executing Node.js files but not on the Node.js console. I guess that&amp;rsquo;s because in the latter case the code is not being executed from within a file.  </description>
     </item>
     
     <item>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Django on Joan Perals — UX Developer</title>
@@ -6,15 +6,11 @@
     <description>Recent content in Django on Joan Perals — UX Developer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 31 Aug 2019 21:33:59 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/django/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 18 Nov 2020 22:29:14 +0000</lastBuildDate><atom:link href="/tags/django/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Importing blog posts from Django to Hugo</title>
       <link>/posts/68/</link>
-      <pubDate>Sat, 31 Aug 2019 21:33:59 +0000</pubDate>
+      <pubDate>Wed, 18 Nov 2020 22:29:14 +0000</pubDate>
       
       <guid>/posts/68/</guid>
       <description>Last year I started a sort of basic Dango-based sort of simple blog just to jot down small software-related learnings in Markdown. I hosted it on Heroku, which is free but sleeps after 30 minutes of inactivity. That&amp;rsquo;s OK for me as a user, but I would not want potential visitors to have to wait for the instance to wake up. At the same time, not sure it&amp;rsquo;s worth paying for Django hosting just for such a minor project.</description>
@@ -31,7 +27,7 @@ I&amp;rsquo;d find a method-based syntax nicer, but it&amp;rsquo;s OK.
 This example helped me more than the documentation:
 https://www.codingforentrepreneurs.com/blog/post-save-vs-pre-save-vs-override-save-method/
 Here is how I used it:
-from django.db import models from django.db.models.signals import pre_save from django.utils import timezone class Learning(models.Model): [...] created_date = models.DateTimeField(blank=True) modified_date = models.DateTimeField(editable=False) [...] # The fields created_date and modified_date are automatically created/modified but are still editable.</description>
+from django.db import modelsfrom django.db.models.signals import pre_savefrom django.utils import timezoneclass Learning(models.Model):[...]created_date = models.DateTimeField(blank=True)modified_date = models.DateTimeField(editable=False)[...]# The fields created_date and modified_date are automatically created/modified but are still editable.</description>
     </item>
     
     <item>
@@ -41,7 +37,7 @@ from django.db import models from django.db.models.signals import pre_save from 
       
       <guid>/posts/13/</guid>
       <description>The feature has to be added as an extra feature in the template tag:
-{{ some_text | markdown:&amp;quot;fenced-code-blocks&amp;quot; }}  </description>
+{{ some_text | markdown:&amp;quot;fenced-code-blocks&amp;quot; }}</description>
     </item>
     
     <item>

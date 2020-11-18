@@ -1,15 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vue.js on Joan Perals — UX Developer</title>
     <link>/tags/vue.js/</link>
     <description>Recent content in Vue.js on Joan Perals — UX Developer</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="/tags/vue.js/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="/tags/vue.js/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
       <link>/jobs/2012-2019-ixds/</link>
@@ -25,10 +21,20 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/projects/spex/</guid>
-      <description>Spex is a tool to help interdisciplinary teams be aligned on design ideas. As part of a research project at IXDS, we developed a functional MVP of Spex in 12 work days. &amp;nbsp;
- 
-The story view allows designers to create a user story for the design idea, as a sort of slide presentation. &amp;nbsp;
+      <description>Spex is a tool to help interdisciplinary teams be aligned on design ideas. As part of a research project at IXDS, we developed a functional MVP of Spex in 12 work days.
+&amp;nbsp;
+  The story view allows designers to create a user story for the design idea, as a sort of slide presentation. &amp;nbsp;
   At the same time, a more technical team member can use the system view to describe the components involved in the system and the relationships between them.</description>
+    </item>
+    
+    <item>
+      <title>ZeroDivs</title>
+      <link>/projects/zerodivs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/zerodivs/</guid>
+      <description>As a web developer I strive to write code that is semantic and concise. And CSS is an often underrated hero that can help you avoid unnecessary scripts and markup. But —just how far can it go?
+A number of people have explored how CSS can be used and abused and came up with many interesting ideas, but it was probably while trying to emulate Lynn Fischer&amp;rsquo;s mind-blowing single div illustrations and realizing how hard it actually is to code CSS illustrations by hand, that I felt the need to, well, maybe, make a visual editor?</description>
     </item>
     
   </channel>

@@ -1,6 +1,56 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/tags/django/</loc>
+    <lastmod>2020-11-18T22:29:14+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/68/</loc>
+    <lastmod>2020-11-18T22:29:14+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/javascript/</loc>
+    <lastmod>2020-11-18T22:29:14+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/markdown/</loc>
+    <lastmod>2020-11-18T22:29:14+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/node.js/</loc>
+    <lastmod>2020-11-18T22:29:14+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-11-18T22:29:14+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/75/</loc>
+    <lastmod>2020-01-18T14:19:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/74/</loc>
+    <lastmod>2019-11-30T17:36:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/70/</loc>
+    <lastmod>2019-11-24T17:19:49+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/73/</loc>
+    <lastmod>2019-11-24T17:15:27+00:00</lastmod>
+  </url>
   
   <url>
     <loc>/posts/file-naming-kebab-case-or-camelcase-gga/</loc>
@@ -15,41 +65,6 @@
   <url>
     <loc>/posts/css-only-low-poly-earth-globe-1idc/</loc>
     <lastmod>2019-10-12T21:42:15+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/django/</loc>
-    <lastmod>2019-08-31T21:33:59+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/posts/68/</loc>
-    <lastmod>2019-08-31T21:33:59+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/javascript/</loc>
-    <lastmod>2019-08-31T21:33:59+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/markdown/</loc>
-    <lastmod>2019-08-31T21:33:59+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/node.js/</loc>
-    <lastmod>2019-08-31T21:33:59+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2019-08-31T21:33:59+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/posts/70/</loc>
-    <lastmod>2019-08-31T21:31:23+00:00</lastmod>
   </url>
   
   <url>
@@ -441,6 +456,10 @@
   
   <url>
     <loc>/tags/wordpress/</loc>
+  </url>
+  
+  <url>
+    <loc>/projects/zerodivs/</loc>
   </url>
   
   <url>

@@ -129,11 +129,8 @@ Features:
 
                 <div class="markdown copy-text">
                     <p>CSS-only Earth Globe experiment on CodePen: <a href="https://codepen.io/jperals/pen/ExYqwyJ">https://codepen.io/jperals/pen/ExYqwyJ</a></p>
-
 <p>(Visit with caution: it&rsquo;s a bit resource hungry)</p>
-
 <p>Features:</p>
-
 <ul>
 <li>CSS 3D transforms</li>
 <li>CSS animations</li>
@@ -141,11 +138,8 @@ Features:
 <li>CSS pseudo-selectors (<code>:before</code>, <code>:after</code>, <code>:nth-child</code>)</li>
 <li>SCSS with trigonometric functions</li>
 </ul>
-
 <p>The hardest part was to stretch the tiles according to the spherical surface (note that they are trapeziums, not rectangles, otherwise they would cross and overlap each other). For this an extra <code>:before</code> pseudo-element was required which gets a slight 3D rotation. I wrote an isolated CodePen with the formula that finds the exact 3D transformation to render a specific trapezoid, which can be found <a href="https://codepen.io/jperals/pen/WNeBqBG">here</a>.</p>
-
 <p><a href="https://codepen.io/jperals/pen/eYObWYW">This other CodePen</a> shows how the tiles with part ground and part sea are achieved (using CSS gradient backgrounds).</p>
-
 <p>Finally, CSS provides 3D transformations but not light simulation, so I added an <code>:after</code> pseudo-element to every tile that basically animates from opaque white to transparent to opaque black. To &ldquo;shade&rdquo; according to angle, each tile in the row has a different animation delay.</p>
 
                 </div>
@@ -173,12 +167,6 @@ Features:
             <li>
                 <a href="/#intro" title="Home">
                     <i class="fas fa-home"></i>
-                </a>
-            </li>
-            
-            <li class="primary">
-                <a href="/#technical-skills" >
-                    Toolbox
                 </a>
             </li>
             
