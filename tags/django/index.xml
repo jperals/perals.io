@@ -13,7 +13,7 @@
       <pubDate>Wed, 18 Nov 2020 22:29:14 +0000</pubDate>
       
       <guid>/posts/68/</guid>
-      <description>Last year I started a sort of basic Dango-based sort of simple blog just to jot down small software-related learnings in Markdown. I hosted it on Heroku, which is free but sleeps after 30 minutes of inactivity. That&amp;rsquo;s OK for me as a user, but I would not want potential visitors to have to wait for the instance to wake up. At the same time, not sure it&amp;rsquo;s worth paying for Django hosting just for such a minor project.</description>
+      <description>Last year I started a sort of basic Dango-based sort of simple blog just to jot down small software-related learnings in Markdown.</description>
     </item>
     
     <item>
@@ -23,11 +23,7 @@
       
       <guid>/posts/12/</guid>
       <description>I found it useful for adding custom created_date and modified_date fields to a model without overriding its save method.
-I&amp;rsquo;d find a method-based syntax nicer, but it&amp;rsquo;s OK.
-This example helped me more than the documentation:
-https://www.codingforentrepreneurs.com/blog/post-save-vs-pre-save-vs-override-save-method/
-Here is how I used it:
-from django.db import modelsfrom django.db.models.signals import pre_savefrom django.utils import timezoneclass Learning(models.Model):[...]created_date = models.DateTimeField(blank=True)modified_date = models.DateTimeField(editable=False)[...]# The fields created_date and modified_date are automatically created/modified but are still editable.</description>
+I&amp;rsquo;d find a method-based syntax nicer, but it&amp;rsquo;s OK.</description>
     </item>
     
     <item>
@@ -46,8 +42,7 @@ from django.db import modelsfrom django.db.models.signals import pre_savefrom 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/jobs/2010-2012-cm/</guid>
-      <description>One of my main tasks at Content Mind was to take care of the visual layer of a Plone-based health information portal.
-The most fun part was the development of complex and visually rich web apps such as a quiz game and a nutrition tracking app.</description>
+      <description>One of my main tasks at Content Mind was to take care of the visual layer of a Plone-based health information portal.</description>
     </item>
     
     <item>
@@ -56,7 +51,7 @@ The most fun part was the development of complex and visually rich web apps such
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/jobs/2012-2019-ixds/</guid>
-      <description>More than 7 years developing high fidelity prototypes for clients like Siemens, Bosch, Deutsche Telekom, and leading companies in the German automotive industry.</description>
+      <description>More than 7 years developing high fidelity prototypes for clients big and small, uncluding Siemens, Bosch, Deutsche Telekom, and leading companies in the German automotive industry, with a strong focus on a user-centric design process.</description>
     </item>
     
   </channel>

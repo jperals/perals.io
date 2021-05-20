@@ -10,19 +10,11 @@
 <meta name="referrer" content="no-referrer">
 
 <meta name="description" content="I found it useful for adding custom created_date and modified_date fields to a model without overriding its save method.
-I&rsquo;d find a method-based syntax nicer, but it&rsquo;s OK.
-This example helped me more than the documentation:
-https://www.codingforentrepreneurs.com/blog/post-save-vs-pre-save-vs-override-save-method/
-Here is how I used it:
-from django.db import modelsfrom django.db.models.signals import pre_savefrom django.utils import timezoneclass Learning(models.Model):[...]created_date = models.DateTimeField(blank=True)modified_date = models.DateTimeField(editable=False)[...]# The fields created_date and modified_date are automatically created/modified but are still editable.">
+I&rsquo;d find a method-based syntax nicer, but it&rsquo;s OK.">
 
 <meta property="og:title" content="Django&#39;s `pre_save` signal" />
 <meta property="og:description" content="I found it useful for adding custom created_date and modified_date fields to a model without overriding its save method.
-I&rsquo;d find a method-based syntax nicer, but it&rsquo;s OK.
-This example helped me more than the documentation:
-https://www.codingforentrepreneurs.com/blog/post-save-vs-pre-save-vs-override-save-method/
-Here is how I used it:
-from django.db import modelsfrom django.db.models.signals import pre_savefrom django.utils import timezoneclass Learning(models.Model):[...]created_date = models.DateTimeField(blank=True)modified_date = models.DateTimeField(editable=False)[...]# The fields created_date and modified_date are automatically created/modified but are still editable." />
+I&rsquo;d find a method-based syntax nicer, but it&rsquo;s OK." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/posts/12/" />
 <meta property="article:published_time" content="2018-07-28T22:45:03+00:00" />
@@ -213,44 +205,9 @@ pre_save.connect(add_dates, sender=Learning)
                 </a>
             </li>
             
-            <li class="secondary">
-                <a href="/cv-joanperals-2019.05.03_01.pdf" >
-                    CV
-                </a>
-            </li>
-            
         </ul>
     </div>
 </nav>
-
-<script type="text/javascript" src="/scripts/nav.js"></script>
-
-
-<script type="text/javascript" src="/scripts/lightbox.js"></script>
-
-
-<script type="text/javascript" src="https://cdn.rawgit.com/kripken/box2d.js/master/build/Box2D_v2.3.1_min.js"></script>
-<script type="text/javascript" src="/scripts/gravity.js"></script>
-
-
-
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-7899353-3', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
-
-
-
-
-
-
 <footer class="site-footer">
 
     <div class="container">
@@ -270,6 +227,33 @@ if (!doNotTrack) {
     </div>
 
 </footer>
+
+
+<script type="text/javascript" src="/scripts/nav.js"></script>
+
+
+<script type="text/javascript" src="/scripts/changing-text.js"></script>
+
+
+<script type="text/javascript" src="/scripts/lightbox.js"></script>
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-7899353-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
 
 
 </body>

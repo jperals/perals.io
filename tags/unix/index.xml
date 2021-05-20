@@ -15,9 +15,7 @@
       <guid>/posts/61/</guid>
       <description>For example, instead of just:
 node .You can do:
-time node .to get some basic extra execution time numbers without the need of extra performance calculations from your app&amp;rsquo;s side.
-On Mac OS, the output looks like this:
-real 0m1.562suser 0m1.544ssys 0m0.167sBut it can vary among operative systems. More information for example on Wikipedia: https://en.wikipedia.org/wiki/Time_(Unix)</description>
+time node .to get some basic extra execution time numbers without the need of extra performance calculations from your app&amp;rsquo;s side.</description>
     </item>
     
   </channel>

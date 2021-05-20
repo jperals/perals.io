@@ -13,7 +13,7 @@
       <pubDate>Wed, 18 Nov 2020 22:29:14 +0000</pubDate>
       
       <guid>/posts/68/</guid>
-      <description>Last year I started a sort of basic Dango-based sort of simple blog just to jot down small software-related learnings in Markdown. I hosted it on Heroku, which is free but sleeps after 30 minutes of inactivity. That&amp;rsquo;s OK for me as a user, but I would not want potential visitors to have to wait for the instance to wake up. At the same time, not sure it&amp;rsquo;s worth paying for Django hosting just for such a minor project.</description>
+      <description>Last year I started a sort of basic Dango-based sort of simple blog just to jot down small software-related learnings in Markdown.</description>
     </item>
     
     <item>
@@ -24,7 +24,7 @@
       <guid>/posts/20/</guid>
       <description>Official documentation: https://nodejs.org/docs/latest/api/modules.html#modules_dirname
 Notes:
- This is a different thing than process.cwd(), as the current file directory and the current working directory may not be necessarily the same. This works when executing Node.js files but not on the Node.js console. I guess that&amp;rsquo;s because in the latter case the code is not being executed from within a file.  </description>
+ This is a different thing than process.cwd(), as the current file directory and the current working directory may not be necessarily the same.</description>
     </item>
     
     <item>
@@ -33,7 +33,7 @@ Notes:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/jobs/2012-2019-ixds/</guid>
-      <description>More than 7 years developing high fidelity prototypes for clients like Siemens, Bosch, Deutsche Telekom, and leading companies in the German automotive industry.</description>
+      <description>More than 7 years developing high fidelity prototypes for clients big and small, uncluding Siemens, Bosch, Deutsche Telekom, and leading companies in the German automotive industry, with a strong focus on a user-centric design process.</description>
     </item>
     
     <item>
@@ -42,9 +42,7 @@ Notes:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/projects/colors-of-twitter/</guid>
-      <description>Basically by combining Twitter feed data (100 million tweets and counting) with a language detector (together with some geometric post-processing, and lots of hours of coding), I was able to offer a quite detailed look at the language geography of the Twitter universe.
-A PNG image of any region of the world can be generated:
-  Africa: Considering how Twitter users often choose the language with a biggest audience, I am happy about the language diversity that shows up in Africa, especially in the South, the East, and the Gulf of Guinea.</description>
+      <description>Basically by combining Twitter feed data (100 million tweets and counting) with a language detector (together with some geometric post-processing, and lots of hours of coding), I was able to offer a quite detailed look at the language geography of the Twitter universe.</description>
     </item>
     
   </channel>

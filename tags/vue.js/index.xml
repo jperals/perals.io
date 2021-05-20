@@ -12,7 +12,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/jobs/2012-2019-ixds/</guid>
-      <description>More than 7 years developing high fidelity prototypes for clients like Siemens, Bosch, Deutsche Telekom, and leading companies in the German automotive industry.</description>
+      <description>More than 7 years developing high fidelity prototypes for clients big and small, uncluding Siemens, Bosch, Deutsche Telekom, and leading companies in the German automotive industry, with a strong focus on a user-centric design process.</description>
     </item>
     
     <item>
@@ -21,10 +21,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/projects/spex/</guid>
-      <description>Spex is a tool to help interdisciplinary teams be aligned on design ideas. As part of a research project at IXDS, we developed a functional MVP of Spex in 12 work days.
-&amp;nbsp;
-  The story view allows designers to create a user story for the design idea, as a sort of slide presentation. &amp;nbsp;
-  At the same time, a more technical team member can use the system view to describe the components involved in the system and the relationships between them.</description>
+      <description>Spex is a tool to help interdisciplinary teams be aligned on design ideas. As part of a research project at IXDS, we developed a functional MVP of Spex in 12 work days.</description>
     </item>
     
     <item>
@@ -33,8 +30,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/projects/zerodivs/</guid>
-      <description>As a web developer I strive to write code that is semantic and concise. And CSS is an often underrated hero that can help you avoid unnecessary scripts and markup. But —just how far can it go?
-A number of people have explored how CSS can be used and abused and came up with many interesting ideas, but it was probably while trying to emulate Lynn Fischer&amp;rsquo;s mind-blowing single div illustrations and realizing how hard it actually is to code CSS illustrations by hand, that I felt the need to, well, maybe, make a visual editor?</description>
+      <description>As a web developer I strive to write code that is semantic and concise. And CSS is an often underrated hero that can help you avoid unnecessary scripts and markup.</description>
     </item>
     
   </channel>

@@ -13,9 +13,7 @@
       <pubDate>Sat, 10 Aug 2019 20:58:55 +0000</pubDate>
       
       <guid>/posts/66/</guid>
-      <description>In CSS one is tempted to group all possible declarations of one selector together, so as to not repeat the selector. So if we find this:
-.selector-1 {...}.selector-2 {...}.selector-1 {...}.selector-3 {...}We would merge the second ruleset with the selector .selector-1 into the first one that uses the same selector:
-.selector-1 {...}.selector-2 {...}.selector-3 {.</description>
+      <description>In CSS one is tempted to group all possible declarations of one selector together, so as to not repeat the selector.</description>
     </item>
     
     <item>
@@ -26,8 +24,7 @@
       <guid>/posts/62/</guid>
       <description>By adding c% at the beginning of the string, and a second string argument with CSS rules.
 Example:
-console.log(&#39;%cmessage&#39;, &#39;color: green;line-height:40px&#39;)https://coderwall.com/p/fskzdw/colorful-console-log
-Tested on Firefox and Chrome.</description>
+console.log(&#39;%cmessage&#39;, &#39;color: green;line-height:40px&#39;)https://coderwall.</description>
     </item>
     
     <item>
@@ -48,8 +45,7 @@ https://medium.com/@_bengarrison/accessing-and-modifying-css-variables-with-java
       <pubDate>Thu, 25 Oct 2018 07:57:12 +0000</pubDate>
       
       <guid>/posts/59/</guid>
-      <description>Its value will also become the color for border and box-shadow, for example, unless those are explicitly set to some other value.
-See example: https://jsbin.com/wodevam/edit?css,output</description>
+      <description>Its value will also become the color for border and box-shadow, for example, unless those are explicitly set to some other value.</description>
     </item>
     
     <item>
@@ -59,7 +55,7 @@ See example: https://jsbin.com/wodevam/edit?css,output</description>
       
       <guid>/posts/57/</guid>
       <description>To make an initial punctuation mark appear hanging (not within the main text block).
-p {hanging-punctuation: first;}From this nice article: https://betterwebtype.com/rhythm-in-web-typography</description>
+p {hanging-punctuation: first;}From this nice article: https://betterwebtype.</description>
     </item>
     
     <item>
@@ -70,8 +66,7 @@ p {hanging-punctuation: first;}From this nice article: https://betterwebtype.
       <guid>/posts/23/</guid>
       <description>Simple example:
 .two-columns { column-count: 2; } MDN docs about the CSS Multi-column layout: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Columns
-MDN docs about the CSS multi-column property in particular: https://developer.mozilla.org/en-US/docs/Web/CSS/column-count
-Simple Codepen usage example of the multi-column property: https://codepen.io/jperals/pen/MPEOxZ</description>
+MDN docs about the CSS multi-column property in particular: https://developer.</description>
     </item>
     
     <item>
@@ -80,7 +75,7 @@ Simple Codepen usage example of the multi-column property: https://codepen.io/jp
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/jobs/2010-2010-linka/</guid>
-      <description> Basically, I took care of the implementation of page layouts according to PSD-based documents for various clients. Also some minor photo editing. </description>
+      <description>Basically, I took care of the implementation of page layouts according to PSD-based documents for various clients. Also some minor photo editing.</description>
     </item>
     
     <item>
@@ -89,8 +84,7 @@ Simple Codepen usage example of the multi-column property: https://codepen.io/jp
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/projects/zerodivs/</guid>
-      <description>As a web developer I strive to write code that is semantic and concise. And CSS is an often underrated hero that can help you avoid unnecessary scripts and markup. But —just how far can it go?
-A number of people have explored how CSS can be used and abused and came up with many interesting ideas, but it was probably while trying to emulate Lynn Fischer&amp;rsquo;s mind-blowing single div illustrations and realizing how hard it actually is to code CSS illustrations by hand, that I felt the need to, well, maybe, make a visual editor?</description>
+      <description>As a web developer I strive to write code that is semantic and concise. And CSS is an often underrated hero that can help you avoid unnecessary scripts and markup.</description>
     </item>
     
   </channel>

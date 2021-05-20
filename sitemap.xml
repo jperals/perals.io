@@ -307,6 +307,10 @@
   </url>
   
   <url>
+    <loc>/jobs/2020-amazon/</loc>
+  </url>
+  
+  <url>
     <loc>/tags/android/</loc>
   </url>
   
@@ -344,6 +348,10 @@
   
   <url>
     <loc>/tags/gatsby/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/graphql/</loc>
   </url>
   
   <url>
@@ -440,6 +448,10 @@
   
   <url>
     <loc>/tags/twitter/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/typescript/</loc>
   </url>
   
   <url>

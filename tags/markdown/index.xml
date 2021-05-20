@@ -13,7 +13,7 @@
       <pubDate>Wed, 18 Nov 2020 22:29:14 +0000</pubDate>
       
       <guid>/posts/68/</guid>
-      <description>Last year I started a sort of basic Dango-based sort of simple blog just to jot down small software-related learnings in Markdown. I hosted it on Heroku, which is free but sleeps after 30 minutes of inactivity. That&amp;rsquo;s OK for me as a user, but I would not want potential visitors to have to wait for the instance to wake up. At the same time, not sure it&amp;rsquo;s worth paying for Django hosting just for such a minor project.</description>
+      <description>Last year I started a sort of basic Dango-based sort of simple blog just to jot down small software-related learnings in Markdown.</description>
     </item>
     
     <item>
@@ -22,8 +22,7 @@
       <pubDate>Sun, 29 Jul 2018 12:47:35 +0000</pubDate>
       
       <guid>/posts/14/</guid>
-      <description>So apparently there are (at least) two ways to add a code block in Markdown: either by indentation (which I find less convenient), or by using the triple-backtick (```) method that I am already used to (Gitlab, Github, Slack, Trello&amp;hellip;),. It seems that using triple tilde (~~~) may also be possible, at least in some implementations.
-Markdown code blocks created with the triple backtick or triple tilde method are called &amp;ldquo;fenced code blocks&amp;rdquo;.</description>
+      <description>So apparently there are (at least) two ways to add a code block in Markdown: either by indentation (which I find less convenient), or by using the triple-backtick (```) method that I am already used to (Gitlab, Github, Slack, Trello&amp;hellip;),.</description>
     </item>
     
   </channel>
