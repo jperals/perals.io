@@ -8,6 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 18 Aug 2019 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>I switched to iPhone and I&#39;m disappointed</title>
+      <link>/posts/i-switched-to-iphone-and-i-m-disappointed-5bld/</link>
+      <pubDate>Mon, 11 Oct 2021 21:02:03 +0000</pubDate>
+      
+      <guid>/posts/i-switched-to-iphone-and-i-m-disappointed-5bld/</guid>
+      <description>After about 8 years using Android phones and having become somewhat disappointed by how much a pervasive system it can be even if being somewhat open-source-based, and also having been close to the UI/UX design world for some time, I decided to give a try to the iPhone and experience the superior UI/UX design which, in my mind, it was supposed to have.</description>
+    </item>
+    
+    <item>
       <title>Importing blog posts from Django to Hugo</title>
       <link>/posts/68/</link>
       <pubDate>Wed, 18 Nov 2020 22:29:14 +0000</pubDate>
@@ -82,7 +91,7 @@ return new Promise(resolve =&amp;gt; resolve(value)) But it can be done in a sim
       <pubDate>Sat, 12 Oct 2019 21:42:15 +0000</pubDate>
       
       <guid>/posts/css-only-low-poly-earth-globe-1idc/</guid>
-      <description>CSS-only Earth Globe experiment on CodePen: https://codepen.io/jperals/pen/ExYqwyJ
+      <description>CSS-only Earth Globe experiment on CodePen: https://codepen.io/jperals/full/ExYqwyJ
 (Visit with caution: it&amp;rsquo;s a bit resource hungry)
 Features:
  CSS 3D transforms CSS animations CSS gradient backgrounds CSS pseudo-selectors (:before, :after, :nth-child) SCSS with trigonometric functions  The hardest part was to stretch the tiles according to the spherical surface (note that they are trapeziums, not rectangles, otherwise they would cross and overlap each other).</description>
